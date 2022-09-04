@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "132137361303",
+    "firebase_url": "https://field-service-management-da2ca.firebaseio.com",
+    "project_id": "field-service-management-da2ca",
+    "storage_bucket": "field-service-management-da2ca.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:132137361303:android:ee543bda9568756c",
+        "android_client_info": {
+          "package_name": "trackwareschoolbus.parentschool.tracker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "132137361303-j1bce16kbuspcmmfkm4enlqn10e0fhku.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "trackwareschoolbus.parentschool.tracker",
+            "certificate_hash": "a10e128a5c50e7f6faa34373dd66442274ed059a"
+          }
+        },
+        {
+          "client_id": "132137361303-udc6oeehlrj6gv1dmflla7j46hneqs7a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCYVFzNlEcAP7mBstY59zB9CIEsa5W2bgc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "132137361303-udc6oeehlrj6gv1dmflla7j46hneqs7a.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "132137361303-c1ejqpievrul4mqhfc3oi8m0nq7rkr16.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "trackware.school"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

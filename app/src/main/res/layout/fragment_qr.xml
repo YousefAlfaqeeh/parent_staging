@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:clickable="true"
+    android:background="@color/color_blue_light"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:scaleX="@integer/scale_ar_en"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="70dp"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imgBack"
+                android:layout_width="wrap_content"
+                style="@style/TintableImage.DarkOnClick"
+                android:layout_height="match_parent"
+                android:padding="18dp"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/img_back" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/labTitle"
+                style="@style/AllTextViewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/qr_code_title"
+                android:textColor="@color/white"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+        <androidx.legacy.widget.Space
+            android:layout_width="70dp"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <TextView
+        style="@style/AllTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="70dp"
+        android:layout_gravity="center"
+        android:background="@color/white"
+        android:gravity="center"
+        android:scaleX="1"
+        android:padding="10dp"
+        android:text="@string/scan_the_code_"
+        android:textColor="@color/black"
+        android:textSize="18dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+
+        <com.dlazaro66.qrcodereaderview.QRCodeReaderView
+            android:id="@+id/qrCodeReaderView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+        <LinearLayout
+            android:id="@+id/hit_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/grey.hint.transparent"
+            android:orientation="vertical"
+            android:weightSum="100">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="100dp"
+                android:layout_weight="80"
+                android:background="@drawable/dialog_regtangel_round_shape"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="30dp"
+                    android:src="@drawable/mobile_scan" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/hint_done_view"
+                style="@style/AllTextViewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="20"
+                android:background="@color/white"
+                android:gravity="center"
+                android:scaleX="1"
+                android:padding="10dp"
+                android:text="@string/ok_got_it"
+                android:textColor="#0086EC"
+                android:textSize="18dp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

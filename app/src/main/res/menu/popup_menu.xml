@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <item android:id="@+id/one"
+        android:title="@string/change_Location"
+        android:iconTint="@color/black"
+        android:icon="@drawable/img_change_location"/>
+
+    <item android:id="@+id/qr_code"
+        android:iconTint="@color/black"
+        android:title="@string/qr_code_title"
+        android:icon="@drawable/qr_code_icon"/>
+
+</menu>

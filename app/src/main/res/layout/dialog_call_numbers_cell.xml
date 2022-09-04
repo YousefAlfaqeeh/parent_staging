@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:scaleX="@integer/scale_ar_en"
+    android:orientation="vertical"
+    android:padding="0dp">
+
+    <LinearLayout
+        android:id="@+id/undo_no_show"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:layout_weight="1.2"
+        android:background="@drawable/call_phones_selector"
+        android:gravity="center"
+        android:padding="10dp"
+        android:orientation="horizontal"
+        android:visibility="visible"
+        android:weightSum="10">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/phone_image"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="end|center_vertical"
+            android:layout_weight="3"
+            android:gravity="end|center_vertical"
+            android:padding="5dp"
+            android:scaleType="centerInside"
+            android:scaleX="@integer/scale_ar_en"
+            app:srcCompat="@drawable/img_call"
+            app:tint="#6DBC52" />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="7dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="7dp"
+            android:background="#6DBC52" />
+
+        <TextView
+            android:id="@+id/phone_text"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="start|center_vertical"
+            android:layout_weight="7"
+            android:gravity="start|center_vertical"
+            android:lineSpacingExtra="3dp"
+            android:scaleX="@integer/scale_ar_en"
+            android:text="fgnfhfghdfhdfgh \n sfgsdfgsdfasdf "
+            android:textColor="#6DBC52"
+            android:textSize="14dp" />
+    </LinearLayout>
+
+
+</RelativeLayout>

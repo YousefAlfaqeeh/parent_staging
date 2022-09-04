@@ -1,0 +1,65 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAFAFA"
+    android:clipToPadding="false"
+    android:clipChildren="false"
+    android:orientation="vertical"
+    android:scaleX="@integer/scale_ar_en">
+
+    <include
+        layout="@layout/app_toolbar_header"
+        android:id="@id/toolBarMainView"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"/>
+
+    <include
+        layout="@layout/kid_details_kid_info_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:clipToPadding="false"
+        android:clipChildren="false"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:clipToPadding="false"
+            android:clipChildren="false"
+            android:id="@+id/allViewsLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:orientation="vertical">
+
+
+            <include
+                layout="@layout/kid_details_additional_info_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                tools:visibility="gone" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <include
+                layout="@layout/kid_details_actions_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="14dp" />
+        </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

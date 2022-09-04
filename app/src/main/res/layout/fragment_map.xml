@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_blue_light"
+    android:orientation="vertical"
+    android:scaleX="@integer/scale_ar_en">
+
+    <include
+        layout="@layout/app_toolbar_header"
+        android:id="@id/toolBarMainView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="3">
+
+        <com.google.android.gms.maps.MapView
+            android:id="@+id/mapKidsLocation"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_weight="1"
+            android:scaleX="@integer/scale_ar_en"
+            >
+
+        </com.google.android.gms.maps.MapView>
+
+        <!-- <ImageView
+             android:layout_marginTop="-49dp"
+             android:id="@+id/img_header"
+             android:layout_width="match_parent"
+             android:layout_height="60dp"
+             android:src="@drawable/under_map"
+             android:layout_alignParentTop="true"
+             android:layout_alignParentStart="true"
+             android:layout_alignParentStart="true" />-->
+        <!--
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/student2"
+                android:id="@+id/imageView2"
+                android:layout_marginTop="-50dp"
+                android:layout_gravity="center"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />-->
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="-20dp"
+            android:src="@drawable/img_circle" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/imgStudentProfile"
+            android:layout_width="110dp"
+            android:layout_height="140dp"
+            android:layout_alignTop="@+id/imageView3"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:scaleX="@integer/scale_ar_en"
+            app:civ_border_color="@color/color_gold"
+            app:civ_border_width="3dp" />
+
+        <LinearLayout
+            android:id="@+id/llDone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0.5"
+            android:background="@color/color_dark"
+            android:focusable="true"
+            android:gravity="center"
+            android:visibility="gone">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="20dp"
+                android:gravity="center"
+                android:scaleX="@integer/scale_ar_en"
+                android:text="@string/end_round"
+                android:textColor="@color/color_white"
+                android:textSize="20dp" />
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+    <!--   <LinearLayout
+           android:layout_marginTop="2dp"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+
+           <include
+               layout="@layout/my_kids_info"/>
+
+   </LinearLayout>-->
+
+    <!-- <RelativeLayout
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:layout_weight="1"
+         android:background="@color/colorBlue_light">
+
+
+         <ImageView
+             android:id="@+id/img_header"
+             android:layout_width="match_parent"
+             android:layout_height="60dp"
+             android:src="@drawable/under_map"
+             android:layout_alignParentTop="true"
+             android:layout_alignParentStart="true"
+             android:layout_alignParentStart="true" />
+
+         <ImageView
+             android:layout_width="80dp"
+             android:layout_height="80dp"
+             android:src="@drawable/student2"
+             android:id="@+id/imageView2"
+             android:layout_marginTop="11dp"
+             android:layout_alignParentTop="true"
+             android:layout_centerHorizontal="true" />
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:layout_marginTop="95dp"
+
+             >
+
+             <include
+                 layout="@layout/my_kids_info"/>
+
+
+
+         </LinearLayout>
+
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="100dp"
+          android:text="lkflfklfklkfl"
+          android:gravity="center"
+          android:textStyle="bold"
+        />
+-->
+    <!--  </RelativeLayout>-->
+</LinearLayout>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:layout_gravity="center"
+    android:gravity="center">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/trans_to_dark_selector"
+        android:orientation="vertical"
+        android:scaleX="@integer/scale_ar_en">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+
+            <RelativeLayout
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:gravity="center">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imgStudent"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/kids_list_circle"
+                    tools:srcCompat="@drawable/notification_icon_msg_emergency" />
+
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <TextView
+                        android:id="@+id/labNotificationDetails"
+                        style="@style/AllTextViewStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="start|center_vertical"
+                        android:layout_weight="1.5"
+                        android:ellipsize="end"
+                        android:gravity="start|center_vertical"
+                        android:lines="2"
+                        android:maxLines="2"
+                        android:text=" dfg fg sd"
+                        android:textSize="13dp">
+
+                    </TextView>
+
+                    <!--<View-->
+
+                    <!--android:layout_width="5dp"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:layout_gravity="center"-->
+                    <!--android:layout_marginTop="15dp"-->
+                    <!--android:layout_marginBottom="15dp"-->
+                    <!--android:background="@color/transparent" />-->
+
+                    <TextView
+                        android:id="@+id/labStudentTime"
+                        style="@style/AllEditTextStyle"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="7dp"
+                        android:layout_marginEnd="7dp"
+                        android:layout_weight="0.5"
+                        android:gravity="center"
+                        android:text="7m ago"
+                        android:textColor="@color/color_dark"
+                        android:textSize="10dp"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+
+                <View
+
+                    android:layout_width="match_parent"
+                    android:layout_height="0.8dp"
+                    android:layout_gravity="center"
+                    android:background="@color/color_gray" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="5dp"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_marginStart="37dp"-->
+        <!--android:gravity="center"-->
+        <!--android:orientation="vertical"-->
+        <!--android:weightSum="2">-->
+
+        <!--<View-->
+            <!--android:id="@+id/top_line"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="0dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:background="#FBB613" />-->
+
+        <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="50dp"-->
+            <!--android:background="@color/transparent" />-->
+
+        <!--<View-->
+            <!--android:id="@+id/bottom_line"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="0dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:background="#FBB613" />-->
+    <!--</LinearLayout>-->
+
+
+</RelativeLayout>

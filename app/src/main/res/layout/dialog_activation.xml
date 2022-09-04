@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="330dp"
+    android:layout_height="230dp"
+    android:scaleX="@integer/scale_ar_en"
+    android:background="@color/color_white"
+    android:padding="10dp"
+
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:orientation="vertical"
+    >
+
+        <TextView
+            android:id="@+id/labTitle"
+            style="@style/AllTextViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:gravity="center"
+            android:paddingBottom="0dp"
+            android:paddingTop="0dp"
+            android:text="@string/message_activate"
+            android:textColor="@color/color_dark"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+
+        <EditText
+            android:id="@+id/txtActivate"
+            style="@style/AllEditTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/edittext_background_whith_border"
+            android:gravity="center_horizontal"
+            android:hint="@string/active_code"
+            android:padding="9dp"
+            android:textColor="@color/color_gray"
+            android:textSize="13dp"
+            android:fontFamily="sans-serif"
+            android:textStyle="bold" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="16dp"
+            android:layout_weight="1"
+            android:scaleX="@integer/scale_ar_en"
+            android:gravity="center_horizontal|center_vertical"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <Button
+                android:id="@+id/btnCancel"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                style="@style/AllButtonsStyle"
+
+                android:scaleX="1"
+                android:layout_weight="1"
+                android:background="@drawable/button_green_rectangel_shape"
+                android:text="@string/cancel"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                />
+
+            <Button
+                android:id="@+id/btnActivity"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                style="@style/AllButtonsStyle"
+                android:scaleX="1"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/button_login_round_shap"
+                android:text="@string/active"
+                android:textAllCaps="false"
+                android:textColor="@android:color/black"
+                />
+
+            <!--<LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="25dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        -->
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

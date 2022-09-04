@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!--font-->
+    <!--<string name="font" translatable="false">fonts/ge_ss_two_arabic_medium.otf</string>-->
+    <!--<string name="font_medium" translatable="false">fonts/ge_ss_two_arabic_medium.otf</string>-->
+    <!--<string name="font_light" translatable="false">fonts/ge_ss_two_arabic_light.otf</string>-->
+    <!--<string name="font_bold" translatable="false">fonts/ge_ss_two_arabic_bold.otf</string>-->
+    <!--font-->
+    <string name="app_name">Trackware - School Transport Parents</string>
+    <string name="name_notif">School bus</string>
+    <string name="title_activity_main">كلوسر - أولياء الامور</string>
+    <string name="action_settings">الاعدادات</string>
+    <string name="title_activity_my_kid_location">Map</string>
+    <string name="parent_code">رمز الأباء</string>
+    <!--<string name="pin">رمز الدخول</string>-->
+    <string name="forget_password"><u>نسيت رمز الدخول ؟</u></string>
+    <string name="phone_number">رقم الهاتف</string>
+    <string name="log_in">دخول</string>
+    <string name="log_out">خروج</string>
+    <string name="my_kids">أبنائي</string>
+    <string name="do_not_pic_up">لاتقم بالتحميل </string>
+    <string name="call_school">المدرسة</string>
+    <string name="setting">الإعدادات</string>
+    <string name="from">التاريخ من</string>
+    <string name="to"> التاريخ الى</string>
+    <string name="notification">الإشعارات</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="send_notification">Send Notificaion to Driver &amp; School</string>
+    <string name="school_name">إسم المدرسة</string>
+    <string name="active_round">الجولة الحالية</string>
+
+    <string name="pic_up_change_location">الجولة الصباحية</string>
+    <string name="drop_off_change_location">الجولة المسائية</string>
+
+    <string name="time_to_arrive">الوقت المتوقع للصول/المسافة</string>
+<!--    <string name="pin_code_requird">أدخل رمز الدخول الخاص بك</string>-->
+    <string name="phoneNumber_please">أدخل رقم الهاتف الخاص بك</string>
+    <string name="phoneNumber_format_please">صيغة رقم الهاتف غير صحيحة</string>
+    <string name="pic_code">أدخل رمز الدخول الخاص بك</string>
+    <string name="title.tutorial">شاشات المساعدة</string>
+    <string name="get_start">يمكنك البدء الآن</string>
+    <string name="reg_email_with_wrong_format">الرجاء ادخال صيغة بريد الكتروني صحيحة</string>
+    <string name="submit">تأكيد</string>
+    <string name="sent">تم التسجيل بنجاح .... سوف يتم الإنتقال بك الى شاشة الدخول خلال لحظات، أو قم بالضغط على "دخول" للذهاب لشاشة الدخول مباشرة</string>
+    <string name="is_register">لقد قمت بالتسجيل مسبقا سوف يتم نقلك الي صفحة الدخول قريبا</string>
+    <string name="done">تم</string>
+    <string name="driver_call">السائق</string>
+    <string name="notification_me_check_in">إرسال إشعار لي عند دخول الأبناء إلى الحافلة</string>
+    <string name="notification_me_check_out">إرسال إشعار لي عند خروج الأبناء من الحافلة</string>
+    <string name="notification_me_bus_near_me">إرسال إشعار لي عند اقتراب الحافلة من المنزل </string>
+    <string name="cancel">إلغاء</string>
+    <string name="en">English</string>
+    <string name="ar">عربي</string>
+    <string name="ar_en">English</string>
+
+    <!--<string name="pick_round">الجولة الصباحية</string>-->
+    <string name="bus_near">الباص قريب منك</string>
+    <string name="check_in">تم التحقق من الدخول</string>
+    <string name="check_out">تم التحقق من الخروج</string>
+    <string name="failed">فشل</string>
+    <string name="enter_from_date">يرجى الدخول من تاريخ</string>
+    <string name="enter_to_date">يرجى الدخول الى تاريخ</string>
+    <string name="please_enter_parent_code">الرجاء ادخال رمز الاباء</string>
+    <string name="please_enter_pin">الرجاء ادخال الرمز</string>
+    <string name="ok">تم</string>
+    <string name="error_api">خطأ في الاتصال</string>
+    <string name="waiting">انتظر</string>
+    <string name="retry">اعاده</string>
+    <string name="change_Location">تغيير موقع المنزل</string>
+    <string name="sure_change_location">هل انت متأكد من تغيير عنوان سكنك ؟</string>
+    <string name="user_name">الإسم الكامل</string>
+    <string name="email">البريد الإلكتروني</string>
+    <string name="confirm_email">تأكيد البريد الإلكتروني </string>
+    <string name="register">التسجيل</string>
+    <string name="go_register">تسجيل</string>
+    <string name="please_enter_name">الرجاء إدخال اسم المستخدم</string>
+    <string name="please_enter_email">الرجاء إدخال البريد الإلكتروني</string>
+    <string name="please_confirm_email">عناوين البريد الإلكتروني غير مطابقة</string>
+
+
+
+    <string name="bus_location">موقع الحافلة</string>
+    <string name="pin_incorrect">الرمز غير صحيح</string>
+    <string name="pic_up"> الحضور </string>
+    <string name="drop_off"> العودة</string>
+    <string name="save">حفظ</string>
+    <string name="current_location">بواسطة عملية السحب و الإسقاط قم بتحريك إشارة الموقع على الخرطة لتحديد مكان الصعود و النزول لاولادك \nهذا الموقع ل:</string>
+    <string name="changed_location_successfully"> تم تغير الموقع بنجاح ل</string>
+    <string name="changed_location_failed">لم يتم تغيير الموقع ! </string>
+    <string name="sent_absent_successfully">تم إرسال طلب غياب بنجاح</string>
+    <string name="send_forget_password">لقد تم إرسال رمز الدخول الخاص بك الى بريدك الإلكتروني</string>
+    <string name="internet_connection">تحقق من اتصالك في الانترنت</string>
+    <string name="fill_field">الرجاء تعبئة كل خانات التاريخ</string>
+
+    <string name="location">الموقع</string>
+    <string name="absent">غياب</string>
+    <string name="network_error"> تحقق من إتصالك بالانترت </string>
+    <string name="select_round_">الرجاء اختيار نوع الجولة </string>
+    <string name="school">المدرسة: </string>
+    <string name="grade">الصف: </string>
+    <string name="no_notification">لايوجد إشعارات</string>
+    <string name="error">حدث خطأ</string>
+    <string name="success">تمت العملية بنجاح</string>
+    <string name="reconnecting_internet">إعادة الاتصال بالإنترنت</string>
+    <string name="reconnecting_server">اعادة الاتصال بالخادم</string>
+    <string name="please_enter_url">الرجاء ادخال الرابط</string>
+    <string name="no_show">لم يظهر</string>
+    <string name="round_not_activr">لا يوجد جولات فعالة الاّن</string>
+    <string name="end_round">انتهت الجولة</string>
+    <string name="disc_url">لاتمام عملية التسجيل، الرجاء عمل نسخ للرابط المرسل في رسالة الدعوة ولصقها في مربع النص أدناه.</string>
+    <string name="register_fail">التسجيل لم يتم بنجاح</string>
+    <string name="register_fail_message">الرجاء مراجعة مسؤوول النظام في المدرسة</string>
+    <string name="semester_time">الفصل الدراسي :</string>
+    <string name="trial">يوم مجانا</string>
+    <string name="active">فعال</string>
+    <string name="expired">بحاجة الى تفعيل</string>
+    <string name="message_activate">الرجاء إدخال رمز التنشيط  هنا</string>
+    <string name="active_code">رمز التفعيل</string>
+    <string name="not_started_yet">لم تبدأ بعد</string>
+    <string name="days_left">يوم متبقي</string>
+    <string name="day_left">يوم متبقي</string>
+    <string name="bus_track">مسار الحافلة</string>
+    <string name="message_no_data">لا يوجد نتائج</string>
+
+    <string name="call_with">الاتصال </string>
+    <string name="chat">محادثة</string>
+    <string name="message_error_in_server">خطأ في الشبكة</string>
+
+    <string name="list_teacher">قائمة المعلمين</string>
+    <string name="subject">الموضوع : </string>
+    <string name="call_assistant">المرافقة</string>
+    <string name="please_chose_date">الرجاء اختيار التاريخ الصحيح</string>
+    <string name="pic_up_list">طلب إصطحاب الإبن</string>
+    <string name="absent_send_succesfill">تم ارسال الغياب بنجاح</string>
+    <string name="error_in_sending">خطأ في الارسال </string>
+    <string name="api_send_error">حدث خطأ،الرجاء المحاوله فيما بعد</string>
+    <string name="teacher">Teacher</string>
+    <string name="me">Me</string>
+    <string name="mother">Mother</string>
+    <string name="father">Father</string>
+
+    <string name="are_you_sure_pickup">هل أنت متأكد من أنك تريد إرسال طلب إصطحاب الأبناء من المدرسة؟</string>
+    <string name="change_location_screen_title">تغيير الموقع</string>
+    <string name="confirm">موافق</string>
+    <string name="yes">نعم</string>
+    <string name="no">لا</string>
+    <string name="qr_code_title">إضافة البطاقة الذكية</string>
+    <string name="create_pin_code">أنشئ رمز الدخول</string>
+
+    <string name="change_Location_pick">تم تغيير موقع "الصعود" بنجاح</string>
+    <string name="change_Location_drop">تم تغيير موقع "النزول" بنجاح</string>
+    <string name="change_Location_both">تم تغيير موقع "الصعود" و "النزول" بنجاح</string>
+
+    <string name="login_pincode">أدخل رمز الدخول الخاص بك</string>
+    <string name="scan_the_code_">قم بعمل مسح للرمز الموجود على البطاقة الذكية لابنك/ابنتك ومن ثم قم بالضغط على زر تأكيد لحفظ معلومات البطاقة</string>
+
+    <string name="by_confirmation_this_message">بالموافقة على هذه الرسالة، سيتم ارسال معلومات الجهاز الى المشرف التقني المدرسة</string>
+    <string name="this_device_is_not_certified">لم يتم التعرف على هذا الجهاز، يرجى مراجعة المشرف التقني المدرسة</string>
+    <string name="ok_got_it">حسناً، علمت الطريقة</string>
+    <string name="the_map_shows_your_location">الخريطة تظهر موقعك الاّن، لتغيير الموقع قم بالضغط على اشارة الموقع ومن ثم سحبها واسقاطها في الموقع المراد على الخريطة لتحديد مكان الصعود والنزول</string>
+    <string name="this_location_is_for">هذا الموقع ل :</string>
+
+    <string name="notification_text_pick">جولة صباحية</string>
+    <string name="notification_text_drop">جولة مسائية</string>
+    <!--<string name="tearms_of_use_u_div"><![CDATA[<div>I agree with Trackware\'s <a href=\'http://www.google.com\'>tearms of use</a></div>]]></string>-->
+
+
+    <string name="allow_distance">يجب أن تكون بالقرب من المدرسة بمسافة ___ متر كحد أدنى لتتمكن من ارسال طلب اصطحاب الأبناء من المدرسة</string>
+
+
+    <string name="tearms_of_use_u_div" tools:ignore="ExtraTranslation">أوافق على <a color='#03A9F4' href='http://www.google.com'> شروط الاستخدام </a> الخاصة بشركة Trackware</string>
+    <string name="tou" tools:ignore="ExtraTranslation"><![CDATA[I agree with Trackware\'s <a color=\'#03A9F4\' href=\'https://school.staging.trackware.com/get-terms-of-use-page/en\'>tearms of use</a>]]></string>
+
+    <string name="tearms_of_use_text_a"> أوافق على </string>
+    <string name="tearms_of_use_text_b"><u>  شروط الاستخدام </u></string>
+    <string name="tearms_of_use_text_c"> الخاصة بشركة Trackware </string>
+    <string name="tearms_of_use_link">https://school.staging.trackware.com/get-terms-of-use-page/ar</string>
+    <string name="the_pin_code_is_a_number_of_four_digits">- يجب أن يكون رمز الدخول مكون من أربع خانات كلها أرقام</string>
+    <!--<string name="tearms_of_use_u_div">I agree with Trackware\'s <a color='#03A9F4' href="http://www.google.com">tearms of use</a></string>-->
+
+    <string name="do_you_want_to_contact_with">هل تريد الاتصال بـ ؟</string>
+    <string name="driver_name">اسم السائق</string>
+    <string name="active_round_now">جولة الحالية</string>
+    <string name="attendance_name">اسم المرافق</string>
+    <string name="skip">تخطى</string>
+    <string name="end_tut">إنهاء</string>
+    <string name="no_gps_dialog_title">يتعذر الوصول لموقعك الحالي !</string>
+    <string name="no_gps_dialog_desc">هذه العملية تتطلب تحديد موقعك، يرجى تشغيل خدمة تحديد الموقع "GPS"</string>
+
+    <string name="change_lang_dialog">تغيير اللغة للانجليزية ؟</string>
+
+
+    <string name="settings_lang">تغيير اللغة للانجليزية</string>
+    <!--<string name="settings_lang_toggle">English</string>-->
+
+
+    <string name="language">اللغة</string>
+    <string name="today">اليوم</string>
+    <string name="at_time"> الساعة </string>
+    <string name="update_available">يتوجب عليك القيام بتحديث هذا التطبيق</string>
+    <string name="update_now">تحديث الان</string>
+    <string name="maybe_later">لاحقاً</string>
+    <string name="the_whole_day">اليوم بأكمله؟</string>
+    <string name="only_during_the_morning">فقط خلال الصباح؟</string>
+    <string name="will_your_child_be_absent_for">هل سيكون ابنك غائبًا عن:</string>
+    <string name="pick_image_title">اختر صورة</string>
+    <string name="track">مسار</string>
+    <string name="feedback">إرسال ملاحظة</string>
+    <string name="enter_your_feedback">أدخل ملاحظاتك... </string>
+    <string name="more">المزيد ...</string>
+    <string name="your_feedback_was_sent_successfully">تم إرسال ملاحظتك بنجاح</string>
+    <string name="round_is_active">الجولة فعالة</string>
+    <string name="no_active_rounds">الجولة غير فعالة</string>
+    <string name="kid_details">معلومات الإبن</string>
+    <string name="select_country">اختر رمز البلد</string>
+
+
+
+    <string name="notification_issue_alert_title">تنبيه</string>
+    <string name="notification_issue_alert_message">يرجى ازالة التطبيق من قائمة وضع توفير الطاقة لعدم مواجهة مشكلة في وصول الاشعارات</string>
+    <string name="notification_issue_alert_button">الذهاب الى القائمة</string>
+    <string name="attintion">انتباه</string>
+    <string name="school_bus_id_near_to_pick_up">School Bus id near to Pick up</string>
+    <string name="sending">إرسال</string>
+    <string name="login_add_children">تسجيل الدخول / إضافة أطفال</string>
+    <string name="password_hint">كلمة المرور</string>
+    <string name="select_school_hint">حدد المدرسة</string>
+    <string name="user_name_hint">اسم المستخدم</string>
+    <string name="please_n_add_children">الرجاء \n إضافة أطفال</string>
+    <string name="forget_password_login"><u>نسيت كلمة المرور؟</u></string>
+    <string name="all_rights_reserved_trackware">جميع الحقوق محفوظة @trackware</string>
+
+    <string name="privacy_policy">بتسجيل الدخول ، أوافق على <a href="https://www.google.com/"> سياسة الخصوصية </a> و <a href="https://www.google.com/"> الشروط والأحكام </a></string>
+    <string name="current_position">Current Position</string>
+
+</resources>

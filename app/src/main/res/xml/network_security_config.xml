@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <domain-config cleartextTrafficPermitted="true">
+<!--        <domain includeSubdomains="true">http://104.248.95.200:8080</domain>-->
+<!--        <domain includeSubdomains="true">http://104.248.95.200</domain>-->
+<!--        <domain includeSubdomains="true">104.248.95.200:8080</domain>-->
+<!--        <domain includeSubdomains="true">104.248.95.200</domain>-->
+
+        <domain includeSubdomains="true">trackware-schools.s3.eu-central-1.amazonaws.com</domain>
+        <domain includeSubdomains="true">http://trackware-schools.s3.eu-central-1.amazonaws.com</domain>
+        <domain includeSubdomains="true">http://school-staging.trackware.com</domain>
+        <domain includeSubdomains="true">school-staging.trackware.com</domain>
+
+    </domain-config>
+</network-security-config>

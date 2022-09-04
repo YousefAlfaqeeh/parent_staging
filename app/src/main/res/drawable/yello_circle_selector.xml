@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" android:enterFadeDuration="100" android:exitFadeDuration="100">
+
+    <!-- <bitmap android:src="@drawable/schedual_cl" /> -->
+
+    <!--<item android:state_pressed="true">-->
+
+        <!--<shape android:shape="rectangle">-->
+            <!--<corners android:radius="5dp" />-->
+            <!--<solid android:color="#27AB8D" />-->
+            <!--<stroke android:width="2dp" android:color="@color/white" />-->
+        <!--</shape>-->
+
+
+    <!--</item>-->
+    <!--&lt;!&ndash;///////////////&ndash;&gt;-->
+    <!--<item android:state_enabled="false">-->
+        <!--<shape android:shape="rectangle">-->
+            <!--<corners android:radius="5dp" />-->
+            <!--<solid android:color="#27AB8D" />-->
+            <!--<stroke android:width="2dp" android:color="@color/white" />-->
+        <!--</shape>-->
+
+    <!--</item>-->
+    <!--//////////////-->
+    <item>
+
+        <shape android:shape="rectangle">
+            <corners android:radius="5dp" />
+            <solid android:color="@color/color_green" />
+            <stroke android:width="1dp" android:color="@color/colorPrimary" />
+        </shape>
+
+
+    </item>
+
+</selector>

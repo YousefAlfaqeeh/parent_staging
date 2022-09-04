@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="330dp"
+    android:layout_height="230dp"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:padding="0dp"
+    android:id="@+id/layOutKidsInfo">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:scaleX="@integer/scale_ar_en"
+        android:layout_weight="2.9"
+        android:background="@drawable/kids_name_background"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/labNotificationDetails"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_weight="1"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="ffssffsfsf"
+            android:scaleX="@integer/scale_ar_en"
+            android:textSize="17dp"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imgCloseDialog"
+            android:layout_width="60dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/image_exit"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:scaleX="@integer/scale_ar_en"
+        android:orientation="vertical"
+        android:paddingTop="15dp"
+        android:weightSum="3">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:weightSum="2"
+            android:gravity="center_horizontal|center_vertical"
+            >
+
+            <TextView
+                android:textColor="@color/color_dark"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:scaleX="@integer/scale_ar_en"
+                android:textSize="16dp"
+                android:text="@string/driver_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/labSchoolName"
+                android:textColor="@color/color_gray"
+                android:scaleX="@integer/scale_ar_en"
+                android:textSize="16dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="fsdf"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:weightSum="2"
+            android:background="#ededed"
+            android:gravity="center_vertical|center_horizontal"
+            >
+
+            <TextView
+                android:textColor="@color/color_dark"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:scaleX="@integer/scale_ar_en"
+                android:text="@string/attendance_name"
+                android:layout_width="0dp"
+                android:textSize="16dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/labActiveRound"
+                android:textColor="@color/color_gray"
+                android:scaleX="@integer/scale_ar_en"
+                android:textSize="16dp"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="fsdf"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:weightSum="2"
+            android:gravity="center_horizontal|center_vertical"
+            >
+
+            <TextView
+                android:textColor="@color/color_dark"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:scaleX="@integer/scale_ar_en"
+                android:text="@string/active_round_now"
+                android:textSize="16dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/labTimeOTArrive"
+                android:textColor="@color/color_gray"
+                android:scaleX="@integer/scale_ar_en"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:layout_weight="1"
+                android:text="fsdf"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <!--  <Button
+          android:id="@+id/btnDone"
+          android:layout_marginTop="20dp"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:background="@drawable/button_green_rectangel_shape"
+          android:text="@string/done"
+          android:textColor="@android:color/white"
+          android:textStyle="bold" android:textAllCaps="false"
+          android:layout_marginStart="20dp"
+          android:layout_marginEnd="20dp"
+          />-->
+</LinearLayout>

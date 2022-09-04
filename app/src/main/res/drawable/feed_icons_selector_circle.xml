@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" android:enterFadeDuration="50" android:exitFadeDuration="50">
+
+
+
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <corners android:radius="50dp" />
+            <solid android:color="@color/transparent" />
+            <stroke android:width="3dp" android:color="@color/color_green_light_trans" />
+        </shape>
+    </item>
+
+    <item android:state_selected="true">
+        <shape android:shape="rectangle">
+            <corners android:radius="50dp" />
+            <solid android:color="@color/transparent" />
+            <stroke android:width="3dp" android:color="@color/color_green_light_trans" />
+        </shape>
+    </item>
+    <item android:state_enabled="false">
+        <shape android:shape="rectangle">
+            <corners android:radius="50dp" />
+            <solid android:color="@color/transparent" />
+            <stroke android:width="3dp" android:color="@color/grey.dark.transparent" />
+        </shape>
+    </item>
+
+    <item android:state_selected="false">
+        <shape android:shape="rectangle">
+            <corners android:radius="50dp" />
+            <solid android:color="@color/transparent" />
+            <stroke android:width="5dp" android:color="@color/grey.dark.transparent" />
+        </shape>
+    </item>
+
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="50dp" />
+            <solid android:color="@color/transparent" />
+            <stroke android:width="5dp" android:color="@color/grey.dark.transparent" />
+
+        </shape>
+    </item>
+
+
+</selector>

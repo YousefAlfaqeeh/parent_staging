@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:http="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:scaleX="@integer/scale_ar_en">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/img_background_login__" />
+
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:layout_height="match_parent">
+
+
+
+    <LinearLayout
+        android:id="@+id/fragment_contener"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <Button
+            android:id="@+id/btnSelectLanguge"
+            style="@style/BDOR.Button"
+            android:layout_width="70dp"
+            android:layout_gravity="end"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="20dp"
+            android:visibility="gone" />
+
+
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:padding="15dp"
+            android:scaleType="centerInside"
+            android:scaleX="@integer/scale_ar_en"
+            android:src="@drawable/login_logo" />
+        <!--</LinearLayout>-->
+
+        <!--  <ScrollView
+
+              android:layout_width="match_parent"
+              android:layout_height="0dp"
+              android:layout_weight="2"
+--><!--
+               android:gravity="center_vertical"
+               android:orientation="vertical">-->
+        <androidx.legacy.widget.Space
+            android:layout_width="match_parent"
+            android:layout_height="25dp" />
+
+        <LinearLayout
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/txtUserName"
+                style="@style/BDOR.EditText"
+                android:hint="@string/user_name" />
+
+            <EditText
+                android:id="@+id/txtEmail"
+                style="@style/BDOR.EditText"
+                android:layout_marginTop="5dp"
+                android:hint="@string/email"
+
+                />
+
+            <EditText
+                android:id="@+id/txtConfirmEmail"
+                style="@style/BDOR.EditText"
+                android:layout_marginTop="5dp"
+                android:hint="@string/confirm_email"
+
+                />
+
+            <EditText
+                android:id="@+id/txtPin"
+                style="@style/BDOR.EditText"
+                android:layout_marginTop="5dp"
+                android:hint="@string/create_pin_code"
+                android:inputType="numberPassword"
+                android:maxLength="4" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start|center_vertical"
+                android:layout_marginStart="50dp"
+                android:layout_marginEnd="50dp"
+                android:background="@color/transparent"
+                android:gravity="start|center_vertical"
+                android:padding="10dp"
+                android:scaleX="@integer/scale_ar_en"
+                android:text="@string/the_pin_code_is_a_number_of_four_digits"
+                android:textColor="@color/color_red_light"
+                android:textSize="12dp" />
+
+
+            <androidx.legacy.widget.Space
+                android:layout_width="match_parent"
+                android:layout_height="5dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatCheckBox
+                    android:id="@+id/tearms_checkBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:drawableTint="@color/colorPrimary"
+                    android:scaleX="@integer/scale_ar_en" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="end|center_vertical"
+                    android:layout_margin="1dp"
+                    android:gravity="end|center_vertical"
+                    android:padding="1dp"
+                    android:scaleX="@integer/scale_ar_en"
+                    android:text="@string/tearms_of_use_text_a"
+                    android:textSize="13.4dp" />
+
+                <TextView
+                    android:id="@+id/tearms_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="end|center_vertical"
+                    android:layout_margin="1dp"
+                    android:background="@drawable/trans_to_dark_selector"
+                    android:gravity="end|center_vertical"
+                    android:padding="1dp"
+                    android:scaleX="@integer/scale_ar_en"
+                    android:text="@string/tearms_of_use_text_b"
+                    android:textColor="@color/lightBlue500"
+                    android:textSize="13.4dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="end|center_vertical"
+                    android:layout_margin="1dp"
+                    android:gravity="end|center_vertical"
+                    android:padding="1dp"
+                    android:scaleX="@integer/scale_ar_en"
+                    android:text="@string/tearms_of_use_text_c"
+                    android:textSize="13.4dp" />
+                <!--<TextView-->
+                <!--android:id="@+id/tearms_tv"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_gravity="start|center_vertical"-->
+                <!--android:layout_margin="1dp"-->
+                <!--android:autoLink="all"-->
+                <!--android:textColorLink="@color/lightBlue500"-->
+                <!--android:background="@drawable/trans_to_dark_selector_circle"-->
+                <!--android:gravity="start|center_vertical"-->
+                <!--android:linksClickable="true"-->
+                <!--android:padding="1dp"-->
+                <!--android:text="@string/tou"-->
+                <!--android:textSize="15dp"-->
+                <!--android:textStyle="bold" />-->
+
+
+            </LinearLayout>
+
+
+            <androidx.legacy.widget.Space
+                android:layout_width="match_parent"
+                android:layout_height="25dp" />
+            <Button
+                android:id="@+id/btnRegister"
+                style="@style/BDOR.Button"
+                android:layout_width="100dp"
+                android:enabled="false"
+                android:text="@string/go_register" />
+            <androidx.legacy.widget.Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+        </LinearLayout>
+        <!--  </ScrollView>-->
+
+    </LinearLayout>
+    <!--</ScrollView>-->
+    </androidx.core.widget.NestedScrollView>
+</FrameLayout>

@@ -1,0 +1,18 @@
+<component name="libraryTable">
+  <library name="Gradle: com.myhexaville:smart-image-picker:1.0.4@aar">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../.gradle/caches/transforms-3/357eb54a7f39558341cb392ec1f97ea3/transformed/jetified-smart-image-picker-1.0.4/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../.gradle/caches/transforms-3/357eb54a7f39558341cb392ec1f97ea3/transformed/jetified-smart-image-picker-1.0.4/res" />
+      <root url="file://$PROJECT_DIR$/../.gradle/caches/transforms-3/357eb54a7f39558341cb392ec1f97ea3/transformed/jetified-smart-image-picker-1.0.4/AndroidManifest.xml" />
+      <root url="jar://$PROJECT_DIR$/../.gradle/caches/transforms-3/57e5b09de830c3ac2640b27c85e0c721/transformed/jetified-smart-image-picker-1.0.4/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../.gradle/caches/transforms-3/57e5b09de830c3ac2640b27c85e0c721/transformed/jetified-smart-image-picker-1.0.4/res" />
+      <root url="file://$PROJECT_DIR$/../.gradle/caches/transforms-3/57e5b09de830c3ac2640b27c85e0c721/transformed/jetified-smart-image-picker-1.0.4/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/com.myhexaville/smart-image-picker/1.0.4/d14a5b46ace3afad18d556ebfacf988a93c67276/smart-image-picker-1.0.4-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/com.myhexaville/smart-image-picker/1.0.4/aab533eac937ffe14a3eb39d89bc2b3bf0dc00f0/smart-image-picker-1.0.4-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,338 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+apply plugin: "org.jetbrains.kotlin.android.extensions"
+apply plugin: 'com.google.gms.google-services'
+apply plugin: 'com.google.firebase.firebase-crash'
+
+
+//def compile_sdk_version = 28
+//def min_sdk_version = 17
+//def support_library_version = "28.0.0"
+//def build_tools_version = "27.0.3"
+
+//def firebase_version = "17.2.3"
+def support_test_version = "1.0.1"
+def gson_version = "2.8.2"
+
+//def retrofit_version = "2.4.0"
+//def rxjava2_adapter_version = retrofit_version
+//def converter_gson = retrofit_version
+////def glide_version = "4.7.1"
+//def okhttp3_logging_version = "3.10.0"
+//def lifecycle_version = "1.1.1"
+////def rxandroid_version = "2.0.2"
+//def rxjava_version = "2.1.13"
+
+/**/
+
+def app_version_code = 136
+def app_version_name ="3.0.2"
+/**/
+
+
+android.applicationVariants.all { variant ->
+
+    configurations.all {
+        exclude module: "play-services-ads-identifier"
+        exclude module: "play-services-measurement"
+        exclude module: "play-services-measurement-sdk"
+        exclude module: "play-services-measurement-api"
+        exclude module: "play-services-measurement-base"
+        exclude module: "play-services-measurement-sdk-api"
+//        exclude module: "play-services-measurement-sdk"
+//        exclude module : 'play-services-ads-identifier'
+//        exclude group:"org.apache.geronimo.specs", module: "geronimo-servlet_2.5_spec"
+//        exclude group:"ch.qos.logback", module:"logback-core"
+    }
+
+//    def formattedDate = new Date().format('yyyyMMddHHmmss')
+//     def version_name = variant.name
+//    if (variant.name =="debug"){
+//        version_name = "dev"
+//    }
+
+//    variant.outputs.all { //parent3_dev_0.0.1
+//        outputFileName = "parent3_0.0.X.apk"
+//    }
+}
+
+android {
+
+    compileSdkVersion 31
+    defaultConfig {
+        applicationId "trackwareschoolbus.parentschool.tracker"
+        minSdkVersion 24
+        targetSdkVersion 31
+        versionCode app_version_code
+        versionName app_version_name
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        multiDexEnabled = true
+        vectorDrawables.useSupportLibrary = true
+
+    }
+    signingConfigs {
+
+        release {
+            keyPassword 'trackwareT0p!@#$'
+            storeFile file('../app/parent.jks')
+            storePassword 'trackwareT0p!@#$'
+            keyAlias 'key0'
+        }
+    }
+
+
+    buildTypes {
+        release {
+            lintOptions {
+
+                disable 'MissingTranslation'
+                checkReleaseBuilds false
+                abortOnError false
+                signingConfig signingConfigs.release
+                minifyEnabled false
+            }
+//            minifyEnabled false
+//            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+
+        debug {
+            lintOptions {
+
+                minifyEnabled false
+            }
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    dexOptions {
+        javaMaxHeapSize "6g"
+    }
+
+
+    productFlavors {
+    }
+}
+//https://stackoverflow.com/questions/42374151/all-com-android-support-libraries-must-use-the-exact-same-version-specification/42680394
+
+//configurations.all {
+//    resolutionStrategy {
+//        force 'androidx.core:core-ktx:1.5.0'
+//    }
+//}
+
+dependencies {
+//    ext {
+//        support_library_version = '27.1.0'
+//        google_play_services_version = '12.0.0'
+//    }
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'androidx.navigation:navigation-fragment-ktx:2.3.5'
+    implementation 'androidx.navigation:navigation-ui-ktx:2.3.5'
+    implementation 'com.google.firebase:firebase-analytics:19.0.2'
+    androidTestImplementation('androidx.test.espresso:espresso-core:3.1.0', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+
+    // Google Support
+    implementation 'androidx.legacy:legacy-support-core-utils:1.0.0'
+    implementation 'androidx.legacy:legacy-support-core-ui:1.0.0'
+    implementation 'androidx.appcompat:appcompat:1.3.1'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'com.google.android.material:material:1.4.0'
+    implementation 'androidx.vectordrawable:vectordrawable:1.1.0'
+//    implementation 'androidx.cardview:cardview:1.0.0'
+
+
+    // Google Firebase
+    implementation "com.google.firebase:firebase-core:17.2.3"
+    implementation "com.google.firebase:firebase-messaging:20.1.2"
+    implementation"com.google.firebase:firebase-crash:16.2.1"
+
+
+    // Google Play Services
+    def play_services_version = "17.0.0"
+//    implementation "com.google.android.gms:play-services:${play_services_version}"
+    implementation "com.google.android.gms:play-services-maps:${play_services_version}"
+//    implementation "com.google.android.gms:play-services-analytics:${play_services_version}"
+    implementation "com.google.android.gms:play-services-location:${play_services_version}"
+//    implementation "com.google.android.gms:play-services-auth:${play_services_version}"
+//    implementation 'com.github.delight-im:Android-AdvancedWebView:v3.2.1'
+
+
+
+    // Google Maps Utils
+    implementation "com.google.maps.android:android-maps-utils:0.5+"
+
+    // Google Support Test
+    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+    androidTestImplementation 'androidx.test:rules:1.4.0'
+
+    // Google Constraint Layout
+
+    //Google GSON
+
+
+
+
+
+    //glide
+    ////////////
+    def glide_v = '4.11.0'
+    implementation "com.github.bumptech.glide:glide:$glide_v"
+    kapt "com.github.bumptech.glide:compiler:$glide_v"
+    implementation "com.github.bumptech.glide:annotations:$glide_v"
+    annotationProcessor "com.github.bumptech.glide:compiler:$glide_v"
+    implementation 'com.github.corouteam:GlideToVectorYou:v2.0.0'
+
+
+    /////////////
+//    implementation "io.reactivex.rxjava2:rxjava:2.1.13"
+
+
+    implementation 'com.nabinbhandari.android:permissions:3.8'
+
+//    implementation 'eu.the4thfloor.volley:com.android.volley:2015.05.28'
+    implementation 'com.android.volley:volley:1.1.1'
+
+    implementation 'de.hdodenhof:circleimageview:2.2.0'
+    //    implementation 'com.nostra13.universalimageloader:universal-image-loader:1.9.5'
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+
+    implementation 'com.wdullaer:materialdatetimepicker:4.2.3'
+    //    implementation 'com.firebase:firebase-jobdispatcher:0.6.0'
+    testImplementation 'junit:junit:4.13.2'
+//    implementation project(':JavaPhoenixChannels-master')
+//    implementation 'io.sentry:sentry-android:1.7.3'
+    //    implementation 'com.getsentry.raven:raven-android:8.0.3'
+//    implementation "com.google.firebase:firebase-core:${google_play_services_version}"
+//    implementation "com.google.android.gms:play-services:${google_play_services_version}"
+    implementation 'androidx.multidex:multidex:2.0.1'
+    implementation 'com.readystatesoftware.sqliteasset:sqliteassethelper:2.0.1'
+//    implementation('com.facebook.android:account-kit-sdk:4.+') {
+//        exclude group: "com.google.android.gms"
+//    }
+    implementation 'com.dlazaro66.qrcodereaderview:qrcodereaderview:2.0.3'
+//    implementation 'uk.co.chrisjenx:calligraphy:2.3.0'
+    def material_dialogs = "0.9.6.0"
+//    implementation 'uk.co.chrisjenx:calligraphy:2.3.0'
+
+    implementation "com.afollestad.material-dialogs:core:${material_dialogs}"
+    implementation "com.afollestad.material-dialogs:commons:${material_dialogs}"
+//    implementation 'com.github.f0ris.sweetalert:library:1.5.2'
+    //    implementation 'com.akexorcist:localizationactivity:1.2.1'
+//    implementation 'com.github.javiersantos:AppUpdater:2.6.5'
+//    implementation 'io.sentry:sentry-android:1.7.3'
+//    implementation 'com.karumi:dexter:4.2.0'
+
+
+
+    //  - for latest version : http://search.maven.org/#search%7Cga%7C1%7Cg%3A%22io.reactivex.rxjava2%22%20a%3A%22rxjava%22
+//    implementation "io.reactivex.rxjava2:rxandroid:${rxandroid_version}"
+//  - for latest version : http://search.maven.org/#search%7Cga%7C1%7Cg%3A%22io.reactivex.rxjava2%22%20a%3A%22rxandroid%22
+//    implementation "io.reactivex.rxjava2:rxjava:${rxjava_version}"
+//    implementation "com.squareup.okhttp3:logging-interceptor:${okhttp3_logging_version}"
+//    implementation 'com.facebook.stetho:stetho-okhttp3:1.5.0'
+    //  - for latest version : http://search.maven.org/#search%7Cga%7C1%7Cg%3A%22com.squareup.retrofit2%22%20a%3A%22adapter-rxjava2%22
+//    implementation "com.squareup.retrofit2:adapter-rxjava2:${rxjava2_adapter_version}"
+    //Retrofit
+//    implementation "com.squareup.retrofit2:retrofit:${retrofit_version}"
+    //Retrofit gson converter
+//    implementation "com.squareup.retrofit2:converter-gson:${converter_gson}"
+
+
+    implementation 'com.github.jkwiecien:EasyImage:2.0.4'
+    implementation 'com.myhexaville:smart-image-picker:1.0.4'
+//    implementation 'com.github.ksoichiro:android-observablescrollview:1.6.0'
+//    implementation 'com.sdoward:rxgooglemaps:1.1.1@aar'
+//    implementation 'com.hbb20:ccp:2.3.7'
+    implementation 'androidx.core:core-ktx:1.7.0'
+    implementation 'androidx.core:core:1.7.0'
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+
+    ///////////////////
+    def retrofit2_v = '2.9.0'
+    implementation "com.squareup.retrofit2:retrofit:$retrofit2_v"
+    implementation "com.squareup.retrofit2:converter-gson:$retrofit2_v"
+    implementation "com.squareup.retrofit2:adapter-rxjava2:$retrofit2_v"
+    implementation 'com.squareup.okhttp3:logging-interceptor:4.9.1'
+    implementation 'com.google.code.gson:gson:2.8.7'
+    implementation 'me.linshen.retrofit2:adapter-livedata:1.0.0'
+    ///////////////////
+    implementation 'io.reactivex.rxjava2:rxandroid:2.1.1'
+    implementation "io.reactivex.rxjava2:rxkotlin:2.4.0"
+    implementation "io.reactivex.rxjava2:rxjava:2.2.19"
+    /////////////////
+
+    ////////////////
+    implementation "androidx.activity:activity:1.3.1"
+    implementation 'androidx.fragment:fragment:1.3.6'
+    implementation "androidx.activity:activity-ktx:1.3.1"
+    implementation "androidx.fragment:fragment-ktx:1.3.6"
+
+    implementation "androidx.cardview:cardview:1.0.0"
+    implementation "androidx.recyclerview:recyclerview:1.2.1"
+    implementation "androidx.swiperefreshlayout:swiperefreshlayout:1.1.0"
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.0'
+    implementation "androidx.annotation:annotation:1.2.0"
+    implementation "androidx.preference:preference-ktx:1.1.1"
+    /////////////
+    def lifecycle_v = "2.3.1"
+    implementation "androidx.lifecycle:lifecycle-common-java8:$lifecycle_v"
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_v"
+    implementation "androidx.lifecycle:lifecycle-livedata-ktx:$lifecycle_v"
+//    implementation "androidx.lifecycle:lifecycle-extensions:$lifecycle_v"
+    implementation "androidx.lifecycle:lifecycle-runtime-ktx:$lifecycle_v"
+    ///////////////
+//    implementation 'com.thefinestartist:finestwebview:1.2.7'
+
+//    implementation "com.mikepenz:iconics-core:5.3.0" // must have androidx.appcompat:appcompat
+
+    implementation 'androidx.webkit:webkit:1.4.0'
+
+    /////////////
+    implementation "androidx.browser:browser:1.4.0"
+//    Dependencies for androidx.browser:browser
+//    androidx.core:core:1.1.0
+//     "androidx.annotation:annotation:1.1.0"
+//    implementation "com.google.guava:listenablefuture:1.0"
+    implementation "com.google.guava:listenablefuture:9999.0-empty-to-avoid-conflict-with-guava"
+
+    implementation("de.peilicke.sascha:android-customtabs:3.0.3")
+
+
+}
+android {
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/license.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/ASL2.0'
+        exclude("META-INF/*.kotlin_module")
+        exclude("META-INF/*")
+        exclude 'META-INF/proguard/androidx-annotations.pro'
+        exclude 'META-INF/rxjava.properties'
+    }
+    dataBinding {
+        enabled = true
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+
+}
+//apply plugin: 'com.google.gms.google-services'
+
+
+apply plugin: 'com.google.gms.google-services'
+repositories {
+    mavenCentral()
+}

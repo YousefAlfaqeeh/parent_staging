@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="330dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="center"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:padding="10dp"
+    android:scaleX="@integer/scale_ar_en"
+
+    >
+
+
+    <!--<android.support.v4.widget.Space-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="20dp"-->
+        <!--android:layout_gravity="center" />-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_margin="20dp"
+        android:background="@color/white"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:orientation="vertical"
+        android:weightSum="4">
+
+        <TextView
+            android:id="@+id/labTitle"
+            style="@style/AllTextViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingTop="0dp"
+            android:text="are you sure ?"
+            android:textColor="@color/color_dark"
+            android:textSize="19dp"
+            android:textStyle="bold" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal|center_vertical"
+            android:orientation="horizontal"
+            android:scaleX="@integer/scale_ar_en"
+            android:weightSum="2">
+
+
+<!--            <Button-->
+<!--                android:id="@+id/btnCancel"-->
+<!--                style="@style/AllButtonsStyle"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="40dp"-->
+<!--                android:layout_marginStart="15dp"-->
+<!--                android:layout_marginEnd="15dp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:background="@drawable/button_green_rectangel_shape"-->
+<!--                android:scaleX="1"-->
+<!--                android:text="@string/cancel"-->
+<!--                android:textAllCaps="false"-->
+<!--                android:textColor="@android:color/white" />-->
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnCancel"
+                style="@style/OutlineButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:textColor="@color/color_red"
+                app:cornerRadius="30dp"
+                android:includeFontPadding="false"
+                android:padding="0dp"
+                android:text="@string/cancel"
+                app:strokeColor="@color/color_red" />
+
+
+<!--            <Button-->
+<!--                android:id="@+id/btnSubmint"-->
+<!--                style="@style/AllButtonsStyle"-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="40dp"-->
+<!--                android:layout_marginStart="15dp"-->
+<!--                android:layout_marginEnd="15dp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:background="@drawable/button_login_round_shap"-->
+<!--                android:scaleX="1"-->
+<!--                android:text="@string/ok"-->
+<!--                android:textAllCaps="false"-->
+<!--                android:textColor="@android:color/black" />-->
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnSubmint"
+                style="@style/OutlineButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:textColor="@color/green500"
+                app:cornerRadius="30dp"
+                android:includeFontPadding="false"
+                android:padding="0dp"
+                android:text="@string/ok"
+                app:strokeColor="@color/green500" />
+
+
+
+            <!--<LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginTop="25dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        -->
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!--<android.support.v4.widget.Space-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="20dp"-->
+        <!--android:layout_gravity="center" />-->
+</LinearLayout>

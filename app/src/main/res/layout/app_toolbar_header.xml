@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolBarMainView"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:layout_gravity="top"
+    android:background="@color/blue_background"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:elevation="4dp"
+    android:gravity="center"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/toolBarback"
+            style="@style/TintableImage.DarkOnClick.ToolBarImages"
+            android:layout_width="55dp"
+            android:paddingStart="25dp"
+            android:paddingTop="22dp"
+            android:paddingBottom="22dp"
+            android:src="@drawable/img_back"
+            app:srcCompat="@drawable/img_back" />
+
+        <Space
+            style="@style/TintableImage.DarkOnClick.ToolBarImages"
+            android:layout_width="50dp"
+            android:paddingStart="30dp"
+            android:paddingTop="22dp"
+            android:paddingBottom="22dp"
+            android:src="@drawable/img_back"
+            app:srcCompat="@drawable/img_back" />
+
+        <TextView
+            android:id="@+id/toolBarTitle"
+            style="@style/AllTextViewStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@null"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:lines="2"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:text="e title "
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+
+        <RelativeLayout
+            android:id="@+id/toolBarNotification"
+            android:layout_width="55dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            android:gravity="center"
+            android:paddingStart="0dp"
+            android:paddingTop="0dp"
+            android:paddingEnd="0dp"
+            android:paddingBottom="0dp">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imgNotification"
+                style="@style/TintableImage.DarkOnClick.ToolBarImages"
+                android:layout_width="50dp"
+                android:layout_gravity="center"
+                android:paddingStart="0dp"
+                android:paddingTop="10dp"
+                android:paddingEnd="20dp"
+
+                android:paddingBottom="10dp"
+                android:src="@drawable/new_ic_notifcation"
+                app:srcCompat="@drawable/new_ic_notifcation" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/imgNotification_count"
+                style="@style/BadgeStyle"
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:layout_alignTop="@+id/imgNotification"
+                android:layout_alignEnd="@+id/imgNotification"
+                android:layout_gravity="top|end"
+                android:layout_margin="@null"
+                android:layout_marginTop="17dp"
+                android:layout_marginEnd="17dp"
+                android:background="@drawable/yello_circle_selector_v2"
+                android:gravity="center"
+                android:scaleX="@integer/scale_ar_en"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/toolBarSettings"
+            style="@style/TintableImage.DarkOnClick.ToolBarImages"
+            android:layout_width="55dp"
+            android:paddingTop="25dp"
+            android:paddingEnd="25dp"
+            android:paddingBottom="24dp"
+            android:src="@drawable/settings_title"
+            app:srcCompat="@drawable/settings_title" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/toolBarHome"
+            style="@style/TintableImage.DarkOnClick.ToolBarImages"
+            android:paddingTop="25dp"
+            android:paddingBottom="25dp"
+            android:src="@drawable/img_home"
+            android:visibility="gone"
+            app:srcCompat="@drawable/img_home" />
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

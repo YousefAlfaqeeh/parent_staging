@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/dialog_regtangel_round_shape"
+    android:orientation="vertical"
+    android:clipToPadding="false"
+    android:clipChildren="false"
+    android:scaleX="@integer/scale_ar_en">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:scaleX="@integer/scale_ar_en"
+            android:src="@drawable/register_successfully" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <TextView
+
+            android:id="@+id/labSend"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:textSize="19dp"
+            android:text="@string/sent"
+
+            style="@style/AllTextViewStyle"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+        <!-- <ProgressBar
+             android:id="@+id/prograss"
+             android:layout_marginTop="-20dp"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_gravity="center"/>-->
+        <!--<Button-->
+        <!--android:id="@+id/btnOk"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:layout_marginTop="20dp"-->
+        <!--android:background="@drawable/button_green_rectangel_shape"-->
+        <!--android:text="@string/done"-->
+        <!--android:textAllCaps="false"-->
+        <!--android:textColor="@android:color/white"-->
+        <!--android:textStyle="bold" />-->
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnOk"
+            style="@style/OutlineButtonStyle"
+            android:layout_gravity="center"
+            app:strokeColor="@color/colorPrimaryDark"
+            android:layout_width="100dp"
+
+            android:text="@string/done" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+    </LinearLayout>
+</LinearLayout>

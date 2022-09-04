@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layOutSetting"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    android:scaleX="@integer/scale_ar_en">
+
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_weight="1"-->
+    <!--android:orientation="horizontal"-->
+    <!--android:paddingBottom="10dp"-->
+    <!--android:paddingTop="10dp">-->
+
+    <!--<TextView-->
+    <!--style="@style/AllTextViewStyle"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_weight="1"-->
+    <!--android:gravity="center_vertical"-->
+    <!--android:text="@string/notification_me_check_in"-->
+    <!--android:textSize="12dp" />-->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="start|center_vertical"
+        android:gravity="start|center_vertical"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:weightSum="1">
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|center_vertical"
+            android:layout_weight="1"
+            android:gravity="start|center_vertical"
+            android:scaleX="@integer/scale_ar_en"
+            android:text="@string/notification_me_check_in"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/swtBusCheckIn"
+            style="@style/SwitchStyle"
+            android:layout_width="wrap_content"
+            android:text="" />
+    </LinearLayout>
+
+
+    <!--<android.support.v7.widget.SwitchCompat-->
+    <!--android:id="@+id/swtBusCheckIn"-->
+    <!--style="@style/SwitchStyle"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:text="@string/notification_me_check_in" />-->
+    <!--</LinearLayout>-->
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/color_gray" />
+
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_weight="1"-->
+    <!--android:orientation="horizontal"-->
+    <!--android:paddingBottom="10dp"-->
+    <!--android:paddingTop="10dp">-->
+
+    <!--<TextView-->
+    <!--style="@style/AllTextViewStyle"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_weight="1"-->
+    <!--android:gravity="center_vertical"-->
+    <!--android:text="@string/notification_me_check_out"-->
+
+    <!--android:textSize="12dp" />-->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="start|center_vertical"
+        android:gravity="start|center_vertical"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:weightSum="1">
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|center_vertical"
+            android:layout_weight="1"
+            android:gravity="start|center_vertical"
+
+            android:scaleX="@integer/scale_ar_en"
+            android:text="@string/notification_me_check_out"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/swtBusCheckOut"
+            style="@style/SwitchStyle"
+            android:layout_width="wrap_content"
+            android:text="" />
+
+
+    </LinearLayout>
+
+
+    <!--</LinearLayout>-->
+
+
+    <!--<LinearLayout-->
+
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_weight="1"-->
+    <!--android:orientation="horizontal"-->
+    <!--android:paddingBottom="10dp"-->
+    <!--android:paddingTop="10dp">-->
+
+    <!--<TextView-->
+    <!--style="@style/AllTextViewStyle"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_weight="1"-->
+    <!--android:gravity="center_vertical"-->
+    <!--android:text="@string/notification_me_bus_near_me"-->
+
+    <!--android:textSize="12dp" />-->
+
+    <!--<android.support.v7.widget.SwitchCompat-->
+    <!--android:id="@+id/swtBusNear"-->
+    <!--style="@style/SwitchStyle"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:text="@string/notification_me_bus_near_me" />-->
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/color_gray" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="start|center_vertical"
+        android:gravity="start|center_vertical"
+        android:orientation="horizontal"
+        android:padding="5dp"
+
+        android:weightSum="1">
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|center_vertical"
+            android:layout_weight="1"
+            android:gravity="start|center_vertical"
+            android:scaleX="@integer/scale_ar_en"
+            android:text="@string/notification_me_bus_near_me"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/swtBusNear"
+            style="@style/SwitchStyle"
+            android:layout_width="wrap_content"
+            android:text="" />
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/color_gray" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_gravity="start|center_vertical"
+        android:gravity="start|center_vertical"
+        android:orientation="horizontal"
+        android:padding="5dp"
+
+        android:weightSum="1">
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_gravity="start|center_vertical"
+            android:layout_weight="1"
+            android:gravity="start|center_vertical"
+            android:scaleX="@integer/scale_ar_en"
+            android:text="@string/language"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/langSpinner"
+            style="@style/Widget.AppCompat.Spinner.Underlined"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:entries="@array/languages_list.values"
+            android:gravity="center"
+            android:scaleX="@integer/scale_ar_en"
+            android:spinnerMode="dropdown"
+            tools:listitem="@android:layout/simple_list_item_1" />
+        <!--android:prompt="@array/languages_list"-->
+
+
+        <!--<android.support.v7.widget.SwitchCompat-->
+        <!--android:id="@+id/swtLang"-->
+        <!--style="@style/SwitchStyle"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:text="" />-->
+
+
+    </LinearLayout>
+
+    <!--<Switch-->
+    <!--android:id="@+id/swtBusNear"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_weight="1" />-->
+    <!--</LinearLayout>-->
+
+
+</LinearLayout>

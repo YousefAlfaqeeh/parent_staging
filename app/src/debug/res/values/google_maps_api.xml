@@ -1,0 +1,30 @@
+<resources>
+    <!--
+    TODO: Before you run your application, you need a Google Maps API key.
+
+    To get one, follow this link, follow the directions and press "Create" at the end:
+
+    https://console.developers.google.com/flows/enableapi?apiid=maps_android_backend&keyType=CLIENT_SIDE_ANDROID&r=40:77:83:06:17:23:F2:FD:89:AC:08:91:6B:E6:68:2C:D6:80:C7:59%3Btrackwareschoolbus.schoolbus
+
+    You can also add your credentials to an existing key, using this line:
+    40:77:83:06:17:23:F2:FD:89:AC:08:91:6B:E6:68:2C:D6:80:C7:59;trackwareschoolbus.schoolbus
+
+    Alternatively, follow the directions here:
+    https://developers.google.com/maps/documentation/android/start#get-key
+
+    Once you have your key (it starts with "AIza"), replace the "google_maps_key"
+    string in this file.
+    -->
+
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyCYVFzNlEcAP7mBstY59zB9CIEsa5W2bgc</string>
+
+    <!--    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyDyj-ugQ1mjxvHMGug6Zreyn37hhE4yNWg</string>-->
+</resources>
+    <!--AIzaSyCpDPLdz3Lfr-UZpoUdDL1H0iey98ySQOU-->
+<!--debug-->
+    <!--AIzaSyBbXjKTzQaGCS4qOkIWRdXAyYzTim_WV9o-->
+
+<!-- .......-->
+<!--release-->
+    <!--  AIzaSyBBHx9fyZ2zX01Yc8UwkZZfiALwr0XuOHo-->
+    <!--AIzaSyAEn1522bbpLHoAJzj2tqZCMlO009kw3Ws-->

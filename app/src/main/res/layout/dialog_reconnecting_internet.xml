@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="330dp"
+    android:layout_height="140dp"
+    android:scaleX="@integer/scale_ar_en"
+    android:padding="5dp"
+    android:orientation="horizontal"
+  >
+
+
+    <ProgressBar
+        android:id="@+id/progressBar2"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_margin="5dip"/>
+  <TextView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:gravity="center"
+      style="@style/AllTextViewStyle"
+      android:textSize="20dp"
+      android:text="@string/reconnecting_server"/>
+</LinearLayout>

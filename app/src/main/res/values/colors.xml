@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!--    <color name="colorPrimary">#fab514</color>-->
+<!--    <color name="colorPrimary">#fab514</color>-->
+    <color name="colorPrimary">@color/blue_background</color>
+
+    <color name="colorPrimary_Clicked">@color/colorPrimaryDark</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#50d9b7</color>
+    <color name="color_green_light">#50d9b7</color>
+    <color name="color_green_dark">#24A686</color>
+    <color name="color_green_light_trans">#7A26FF00</color>
+
+
+
+    <color name="color_dark">#2d2d2d</color>
+    <color name="color_gray">#948e90</color>
+    <color name="color_red">#f70c08</color>
+
+    <color name="color_red_light">#C5645F</color>
+    <color name="color_blue_light">#efeff6</color>
+    <color name="color_gold">#edb11a</color>
+    <color name="color_kids_info">#6b6b6b </color>
+    <color name="button_call">#8AD15D</color>
+    <color name="call_school">#2ab4ea</color>
+    <color name="absent">#f7a9b4</color>
+    <color name="color_end_round">#20ffffff</color>
+    <color name="color_white">#ffffff</color>
+    <color name="color_green">#3ed246</color>
+
+    <!--<color name="color_bus_track">#DB8A44</color>-->
+    <!--<color name="color_absent">#E96055</color>-->
+    <!--<color name="color_call_with">#6DBC51</color>-->
+    <!--<color name="color_chat">#51D7B8</color>-->
+    <!--<color name="color_pick_up">#5286EC</color>-->
+
+    <!--<color name="_color_pick_up">#105286EC</color>-->
+    <color name="buttons.background.blue">#00D5E3</color>
+    <color name="buttons.background.blue.dark">#00A8B0</color>
+    <color name="transparent">#00000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="grey.normal">#EDEDED</color>
+    <color name="grey.normal.transparent">#40EDEDED</color>
+    <color name="grey.dark">#BCBCBC</color>
+    <color name="grey.dark.transparent">#40BCBCBC</color>
+    <color name="school_message_color">#2A3A49</color>
+<!--    <color name="notification_hightlight_text">#F18C44</color>-->
+        <color name="notification_hightlight_text">@color/blue_background</color>
+<!---->
+
+    <color name="student_list_qr_color">#000000</color>
+    <color name="student_list_absent_color">#E55352</color>
+    <color name="student_list_call_color">#77BA59</color>
+    <color name="student_list_pick_up_color">#5D87E9</color>
+    <color name="student_list_chat_color">#F18C44</color>
+    <color name="student_list_bustrack_color">#D3884C</color>
+    <color name="grey.hint.transparent">#40BCBCBC</color>
+
+    <color name="kids_list_online">#62D614</color>
+    <color name="kids_list_offline">#828282</color>
+
+    <color name="light_gray">#D4D4D4</color>
+    <color name="blue_text">#4797D6</color>
+    <color name="blue_background">#307FBC</color>
+
+
+
+</resources>

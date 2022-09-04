@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:clickable="true"
+    android:orientation="vertical"
+    >
+
+
+    <include
+        layout="@layout/app_toolbar_header"
+        android:id="@id/toolBarMainView"
+        android:layout_width="match_parent"
+        android:layout_height="70dp" />
+
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/mapChangeLocation"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6"
+
+        android:scaleX="@integer/scale_ar_en">
+
+    </com.google.android.gms.maps.MapView>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="4"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="10dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:paddingTop="5dp"
+                android:scaleX="@integer/scale_ar_en"
+                android:text="@string/the_map_shows_your_location"
+                android:textSize="17dp" />
+
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start|center_vertical"
+                android:layout_marginBottom="5dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="5dp"
+                android:gravity="start|center_vertical"
+                android:scaleX="@integer/scale_ar_en"
+                android:text="@string/this_location_is_for"
+                android:textColor="@color/black" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start|center_vertical"
+                android:gravity="start|center_vertical"
+                android:orientation="horizontal"
+                android:scaleX="@integer/scale_ar_en">
+
+                <androidx.appcompat.widget.AppCompatCheckBox
+                    android:id="@+id/checkPickUp"
+                    style="@style/CheckBoxStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start|center_vertical"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:gravity="start|center_vertical"
+                    android:maxWidth="170dp"
+                    android:text="@string/pic_up" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start|center_vertical"
+                android:gravity="start|center_vertical"
+                android:orientation="horizontal"
+                android:scaleX="@integer/scale_ar_en">
+
+                <androidx.appcompat.widget.AppCompatCheckBox
+                    android:id="@+id/checkDropOff"
+                    style="@style/CheckBoxStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start|center_vertical"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:gravity="start|center_vertical"
+                    android:text="@string/drop_off" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+                <Button
+                    android:id="@+id/btnCancleLocattion"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_green_rectangel_shape"
+                    android:gravity="center"
+                    android:text="@string/cancel"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white" />
+
+                <androidx.legacy.widget.Space
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent" />
+
+                <Button
+                    android:id="@+id/btnSaveLocattion"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_login_round_shap"
+                    android:gravity="center"
+                    android:text="@string/save"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white" />
+
+                <!--<Button-->
+                <!--android:id="@+id/btnCancleLocattion"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="30dp"-->
+                <!--android:layout_gravity="center_vertical|center_horizontal"-->
+                <!--android:layout_marginBottom="5dp"-->
+                <!--android:layout_marginStart="30dp"-->
+                <!--android:layout_marginEnd="30dp"-->
+                <!--android:layout_marginTop="10dp"-->
+                <!--android:layout_weight="1"-->
+                <!--android:background="@drawable/button_green_rectangel_shape"-->
+                <!--android:gravity="center"-->
+                <!--android:text="@string/cancel"-->
+                <!--android:textAllCaps="false"-->
+                <!--android:textColor="@android:color/white" />-->
+
+
+                <!--<Button-->
+                <!--android:id="@+id/btnSaveLocattion"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="30dp"-->
+                <!--android:layout_gravity="center_vertical|center_horizontal"-->
+                <!--android:layout_marginBottom="5dp"-->
+                <!--android:layout_marginStart="30dp"-->
+                <!--android:layout_marginEnd="30dp"-->
+                <!--android:layout_marginTop="10dp"-->
+                <!--android:layout_weight="1"-->
+                <!--android:background="@drawable/button_login_round_shap"-->
+                <!--android:gravity="center"-->
+                <!--android:text="@string/save"-->
+                <!--android:textAllCaps="false"-->
+                <!--android:textColor="@android:color/white" />-->
+
+            </LinearLayout>
+
+            <androidx.legacy.widget.Space
+                android:layout_width="match_parent"
+                android:layout_height="30dp" />
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+
+</LinearLayout>
+
+
+    <!--<?xml version="1.0" encoding="utf-8"?>-->
+    <!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_gravity="start|center_vertical"-->
+    <!--android:gravity="start|center_vertical"-->
+    <!--android:orientation="vertical"-->
+    <!--android:scaleX="@integer/scale_ar_en"-->
+    <!--android:weightSum="10">-->
+
+    <!--<include-->
+    <!--layout="@layout/app_toolbar_header"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="70dp" />-->
+
+    <!--<com.google.android.gms.maps.MapView-->
+    <!--android:id="@+id/mapChangeLocation"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="0dp"-->
+    <!--android:layout_weight="5"-->
+    <!--android:scaleX="@integer/scale_ar_en">-->
+
+    <!--</com.google.android.gms.maps.MapView>-->
+
+    <!--<include-->
+    <!--layout="@layout/change_location_controlles"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_weight="5"-->
+    <!--android:layout_height="0dp" />-->
+    <!--&lt;!&ndash;&ndash;&gt;-->
+    <!--&lt;!&ndash;<LinearLayout&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_height="0dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_gravity="start|center_vertical"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_margin="7dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_weight="5"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:gravity="start|center_vertical"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:orientation="vertical">&ndash;&gt;-->
+
+    <!--&lt;!&ndash;&lt;!&ndash;        style="@style/AllTextViewStyle"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:text="@string/change_location"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:gravity="center_vertical|center_horizontal"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:textColor="@color/color_dark"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:textStyle="bold"&ndash;&gt;-->
+
+    <!--&lt;!&ndash;android:textSize="17dp"/>&ndash;&gt;&ndash;&gt;-->
+
+    <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+    <!--&lt;!&ndash;style="@style/AllTextViewStyle"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_gravity="start|center_vertical"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:gravity="start|center_vertical"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:paddingTop="5dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_marginStart="10dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_marginEnd="10dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:text="@string/the_map_shows_your_location" />&ndash;&gt;-->
+
+
+    <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+    <!--&lt;!&ndash;style="@style/AllTextViewStyle"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_gravity="start|center_vertical"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:gravity="start|center_vertical"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_marginBottom="5dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_marginStart="10dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_marginEnd="10dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_marginTop="5dp"&ndash;&gt;-->
+
+    <!--&lt;!&ndash;android:text="@string/this_location_is_for"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:textColor="@color/black" />&ndash;&gt;-->
+
+    <!--&lt;!&ndash;<LinearLayout&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_gravity="start|center_vertical"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:gravity="start|center_vertical"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:orientation="horizontal"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:scaleX="@integer/scale_ar_en"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:weightSum="1">&ndash;&gt;-->
+
+    <!--&lt;!&ndash;<android.support.v7.widget.AppCompatCheckBox&ndash;&gt;-->
+    <!--&lt;!&ndash;android:id="@+id/checkPickUp"&ndash;&gt;-->
+    <!--&lt;!&ndash;style="@style/CheckBoxStyle"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_width="0dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_marginStart="35dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_marginEnd="35dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_weight="1"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:text="@string/pic_up_change_location" />&ndash;&gt;-->
+    <!--&lt;!&ndash;</LinearLayout>&ndash;&gt;-->
+
+    <!--&lt;!&ndash;<LinearLayout&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_gravity="start|center_vertical"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:gravity="start|center_vertical"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:orientation="horizontal"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:scaleX="@integer/scale_ar_en"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:weightSum="1">&ndash;&gt;-->
+
+    <!--&lt;!&ndash;<android.support.v7.widget.AppCompatCheckBox&ndash;&gt;-->
+    <!--&lt;!&ndash;android:id="@+id/checkDropOff"&ndash;&gt;-->
+    <!--&lt;!&ndash;style="@style/CheckBoxStyle"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_width="0dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_marginStart="35dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_marginEnd="35dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_weight="1"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:text="@string/drop_off_change_location" />&ndash;&gt;-->
+    <!--&lt;!&ndash;</LinearLayout>&ndash;&gt;-->
+
+
+    <!--&lt;!&ndash;<LinearLayout&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:scaleX="@integer/scale_ar_en"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:gravity="center"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_gravity="center"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:orientation="horizontal">&ndash;&gt;-->
+
+
+    <!--&lt;!&ndash;<Button&ndash;&gt;-->
+    <!--&lt;!&ndash;android:id="@+id/btnCancleLocattion"&ndash;&gt;-->
+    <!--&lt;!&ndash;style="@style/AllTextViewStyle"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_height="40dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_gravity="center_vertical|center_horizontal"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_marginBottom="5dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_marginStart="30dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_marginEnd="30dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_marginTop="10dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_weight="1"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:background="@drawable/button_green_rectangel_shape"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:gravity="center"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:text="@string/cancel"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:textAllCaps="false"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:scaleX="1"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:textColor="@android:color/white" />&ndash;&gt;-->
+
+
+    <!--&lt;!&ndash;<Button&ndash;&gt;-->
+    <!--&lt;!&ndash;android:id="@+id/btnSaveLocattion"&ndash;&gt;-->
+    <!--&lt;!&ndash;style="@style/AllTextViewStyle"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_height="40dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_gravity="center_vertical|center_horizontal"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_marginBottom="5dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_marginStart="30dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:scaleX="1"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_marginEnd="30dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_marginTop="10dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_weight="1"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:background="@drawable/button_login_round_shap"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:gravity="center"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:text="@string/save"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:textAllCaps="false"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:textColor="@android:color/black" />&ndash;&gt;-->
+
+    <!--&lt;!&ndash;</LinearLayout>&ndash;&gt;-->
+    <!--&lt;!&ndash;</LinearLayout>&ndash;&gt;-->
+
+    <!--&lt;!&ndash;<fragment xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:map="http://schemas.android.com/apk/res-auto"-->
+    <!--android:id="@+id/map"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:name="com.google.android.gms.maps.SupportMapFragment"-->
+    <!--map:mapType="normal"/>&ndash;&gt;-->
+    <!--</LinearLayout>-->

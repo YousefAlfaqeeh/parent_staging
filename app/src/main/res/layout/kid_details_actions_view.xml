@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    app:cardElevation="3dp"
+    app:cardUseCompatPadding="false"
+    tools:ignore="MissingConstraints">
+
+    <LinearLayout
+        android:id="@+id/kid_details_actions_view_root"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/call_view"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/trans_to_dark_selector"
+            android:orientation="horizontal"
+            android:paddingStart="@dimen/kid_d_content_padding"
+            android:paddingEnd="30dp">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/call_view_img"
+                android:layout_width="@dimen/kid_details_icons_h"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:padding="0dp"
+                android:scaleType="fitCenter"
+                app:layout_constraintEnd_toStartOf="@+id/tvCall"
+                app:layout_constraintStart_toStartOf="parent"
+                app:srcCompat="@drawable/call_outline"
+                app:tint="#939ccd" />
+
+
+            <TextView
+                android:id="@+id/tvCall"
+
+                style="@style/AllTextViewStyle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="start|center_vertical"
+                android:layout_marginStart="@dimen/kid_d_text_left_padding"
+                android:gravity="start|center_vertical"
+                android:text="@string/call_with"
+                android:textColor="@color/material_blue_grey_9000"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/call_view_img" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="@dimen/kid_d_text_under_line_left_padding"
+                android:background="@color/color_blue_light"
+                app:layout_constraintBottom_toBottomOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/absent_view"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/trans_to_dark_selector"
+            android:orientation="horizontal"
+            android:paddingStart="@dimen/kid_d_content_padding"
+            android:paddingEnd="30dp">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/img_absent_iv"
+                android:layout_width="@dimen/kid_details_icons_h"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:padding="0dp"
+                android:scaleType="fitCenter"
+                app:layout_constraintEnd_toStartOf="@+id/tvAbsent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:srcCompat="@drawable/absent_outline_"
+                app:tint="#e59a95" />
+
+
+            <TextView
+                android:id="@+id/tvAbsent"
+                style="@style/AllTextViewStyle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="start|center_vertical"
+                android:layout_marginStart="@dimen/kid_d_text_left_padding"
+                android:gravity="start|center_vertical"
+                android:text="@string/absent"
+                android:textColor="@color/material_blue_grey_900"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/img_absent_iv" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="@dimen/kid_d_text_under_line_left_padding"
+                android:background="@color/color_blue_light"
+                app:layout_constraintBottom_toBottomOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/change_location_view"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/trans_to_dark_selector"
+            android:orientation="horizontal"
+            android:paddingStart="@dimen/kid_d_content_padding"
+            android:paddingEnd="30dp">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/img_change_location_iv"
+                android:layout_width="@dimen/kid_details_icons_h"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:padding="0dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/change_home_outline"
+                android:tint="#a9b188"
+                app:layout_constraintEnd_toStartOf="@+id/tvChangeLocation"
+                app:layout_constraintStart_toStartOf="parent"
+                app:srcCompat="@drawable/change_home_outline"
+                app:tint="#a9b188" />
+
+
+            <TextView
+                android:id="@+id/tvChangeLocation"
+                style="@style/AllTextViewStyle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="start|center_vertical"
+                android:layout_marginStart="@dimen/kid_d_text_left_padding"
+                android:gravity="start|center_vertical"
+                android:text="@string/change_Location"
+                android:textColor="@color/material_blue_grey_900"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/img_change_location_iv" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="@dimen/kid_d_text_under_line_left_padding"
+                android:background="@color/color_blue_light"
+                app:layout_constraintBottom_toBottomOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/pickup_view"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:visibility="gone"
+            android:background="@drawable/trans_to_dark_selector"
+            android:orientation="horizontal"
+            android:paddingStart="@dimen/kid_d_content_padding"
+            android:paddingEnd="30dp">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/pic_up_list_img"
+                android:layout_width="35dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:padding="0dp"
+                android:scaleType="fitCenter"
+                app:layout_constraintStart_toStartOf="parent"
+                app:srcCompat="@drawable/pick_up_outline"
+                app:tint="#ac94b9" />
+
+
+            <TextView
+                android:id="@+id/tvPikUp"
+                style="@style/AllTextViewStyle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="start|center_vertical"
+                android:layout_marginStart="14dp"
+                android:gravity="start|center_vertical"
+                android:text="@string/pic_up_list"
+                android:textColor="@color/material_blue_grey_900"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/pic_up_list_img" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="@dimen/kid_d_text_under_line_left_padding"
+                android:background="@color/color_blue_light"
+                app:layout_constraintBottom_toBottomOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/qr_view"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/trans_to_dark_selector"
+            android:orientation="horizontal"
+            android:paddingStart="@dimen/kid_d_content_padding"
+            android:paddingEnd="30dp">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/qr_view_img"
+                android:layout_width="@dimen/kid_details_icons_h"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:padding="0dp"
+                android:scaleType="fitCenter"
+                app:layout_constraintEnd_toStartOf="@+id/tvQr"
+                app:layout_constraintStart_toStartOf="parent"
+                app:srcCompat="@drawable/code_outline"
+                app:tint="#89adc6" />
+
+
+            <TextView
+                android:id="@+id/tvQr"
+                style="@style/AllTextViewStyle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="start|center_vertical"
+                android:layout_marginStart="@dimen/kid_d_text_left_padding"
+                android:gravity="start|center_vertical"
+                android:text="@string/qr_code_title"
+                android:textColor="@color/material_blue_grey_900"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/qr_view_img" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="@dimen/kid_d_text_under_line_left_padding"
+                android:background="@color/color_blue_light"
+                app:layout_constraintBottom_toBottomOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/feed_view"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/trans_to_dark_selector"
+            android:orientation="horizontal"
+            android:paddingStart="@dimen/kid_d_content_padding"
+            android:paddingEnd="30dp">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/feed_view_img"
+                android:layout_width="@dimen/kid_details_icons_h"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:padding="0dp"
+                android:scaleType="fitCenter"
+                app:layout_constraintEnd_toStartOf="@+id/tvFee"
+                app:layout_constraintStart_toStartOf="parent"
+                app:srcCompat="@drawable/feedback_outline"
+                app:tint="#d5ae90" />
+
+
+            <TextView
+                android:id="@+id/tvFee"
+                style="@style/AllTextViewStyle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="start|center_vertical"
+                android:layout_marginStart="@dimen/kid_d_text_left_padding"
+                android:gravity="start|center_vertical"
+                android:text="@string/feedback"
+                android:textColor="@color/material_blue_grey_900"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/feed_view_img" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginStart="@dimen/kid_d_text_under_line_left_padding"
+                android:background="@color/color_blue_light"
+                app:layout_constraintBottom_toBottomOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <!--        <androidx.constraintlayout.widget.ConstraintLayout-->
+        <!--            android:id="@+id/school_web_view_contain"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="60dp"-->
+        <!--            android:clickable="true"-->
+        <!--            android:background="@drawable/trans_to_dark_selector"-->
+        <!--            android:orientation="horizontal"-->
+        <!--            android:paddingStart="@dimen/kid_d_content_padding">-->
+
+        <!--            <androidx.appcompat.widget.AppCompatImageView-->
+        <!--                android:id="@+id/school_web_view_image"-->
+        <!--                android:layout_width="@dimen/kid_details_icons_h"-->
+        <!--                android:layout_height="match_parent"-->
+        <!--                android:layout_gravity="center"-->
+        <!--                android:padding="0dp"-->
+        <!--                android:scaleType="fitCenter"-->
+        <!--                app:srcCompat="@drawable/school_outline"-->
+        <!--                app:tint="#d5ae90" />-->
+
+
+        <!--            <TextView-->
+        <!--                style="@style/AllTextViewStyle"-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="match_parent"-->
+        <!--                android:layout_gravity="start|center_vertical"-->
+        <!--                android:layout_marginStart="@dimen/kid_d_text_left_padding"-->
+        <!--                android:gravity="start|center_vertical"-->
+        <!--                android:text="School Page"-->
+        <!--                android:textColor="@color/material_blue_grey_900"-->
+        <!--                android:textSize="16dp"-->
+        <!--                android:textStyle="bold"-->
+        <!--                app:layout_constraintStart_toEndOf="@+id/school_web_view_image" />-->
+
+
+        <!--        </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

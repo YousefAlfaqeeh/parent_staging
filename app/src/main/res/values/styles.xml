@@ -1,0 +1,364 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingPrefix">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/blue_background</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <!--<item name="fontPath">@string/font</item>-->
+        <item name="android:fontFamily">@font/roboto</item>
+        <item name="fontFamily">@font/roboto</item>
+        <item name="rippleColor">@color/blue_text</item>
+        <item name="android:windowAnimationStyle">@style/AppTheme.WindowTransition</item>
+
+
+        <!--<item name="android:textViewStyle">@style/AllTextViewStyle</item>-->
+        <!--<item name="android:buttonStyle">@style/AllButtonsStyle</item>-->
+        <!--<item name="android:editTextStyle">@style/AllEditTextStyle</item>-->
+    </style>
+
+
+    <style name="Activity_Theme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <!--<item name="android:textViewStyle">@style/AllTextViewStyle</item>-->
+        <!--<item name="android:buttonStyle">@style/AllButtonsStyle</item>-->
+        <!--<item name="android:editTextStyle">@style/AllEditTextStyle</item>-->
+        <item name="rippleColor">@color/blue_text</item>
+        <item name="android:windowAnimationStyle">@style/AppTheme.WindowTransition</item>
+
+
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/blue_background</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <!--<item name="fontPath">@string/font</item>-->
+        <item name="android:fontFamily">@font/roboto</item>
+        <item name="fontFamily">@font/roboto</item>
+    </style>
+
+<!--    <style name="Web_Activity_Theme" parent="Theme.MaterialComponents.Light.DarkActionBar">-->
+<!--        &lt;!&ndash; Customize your theme here. &ndash;&gt;-->
+<!--        &lt;!&ndash;<item name="android:textViewStyle">@style/AllTextViewStyle</item>&ndash;&gt;-->
+<!--        &lt;!&ndash;<item name="android:buttonStyle">@style/AllButtonsStyle</item>&ndash;&gt;-->
+<!--        &lt;!&ndash;<item name="android:editTextStyle">@style/AllEditTextStyle</item>&ndash;&gt;-->
+<!--        <item name="android:actionBarStyle">@style/MyActionBar</item>-->
+<!--        <item name="colorPrimary">@color/blue_background</item>-->
+<!--        <item name="colorPrimaryDark">@color/blue_background</item>-->
+<!--        <item name="colorAccent">@color/colorAccent</item>-->
+<!--        &lt;!&ndash;<item name="fontPath">@string/font</item>&ndash;&gt;-->
+<!--        <item name="android:fontFamily">@font/roboto</item>-->
+<!--        <item name="fontFamily">@font/roboto</item>-->
+<!--        <item name="android:statusBarColor">@color/blue_background</item>-->
+
+<!--    </style>-->
+
+<!--    <style name="MyActionBar" parent="@android:style/Widget.Holo.Light.ActionBar">-->
+<!--        <item name="android:background">@color/blue_background</item>-->
+<!--        <item name="android:buttonTint">@color/white</item>-->
+<!--        <item name="android:titleTextColor">@color/white</item>-->
+<!--    </style>-->
+    <style name="AppTheme.WindowTransition">
+        <item name="android:windowEnterAnimation">@anim/fade_in</item>
+        <item name="android:windowExitAnimation">@anim/fade_out</item>
+    </style>
+    <style name="activity_theam" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!--<item name="fontPath">@string/font</item>-->
+        <item name="android:fontFamily">@font/roboto</item>
+        <item name="fontFamily">@font/roboto</item>
+        <item name="android:statusBarColor">@color/blue_background</item>
+        <item name="rippleColor">@color/blue_text</item>
+        <item name="android:windowAnimationStyle">@style/AppTheme.WindowTransition</item>
+
+
+        <!--<item name="windowActionBar">false</item>-->
+        <!--<item name="windowNoTitle">true</item>-->
+        <!--<item name="android:textViewStyle">@style/AllTextViewStyle</item>-->
+        <!--<item name="android:buttonStyle">@style/AllButtonsStyle</item>-->
+        <!--<item name="android:editTextStyle">@style/AllEditTextStyle</item>-->
+
+
+    </style>
+
+
+    <style name="AllTextViewStyle">
+        <item name="rippleColor">@color/blue_text</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:scaleX">@integer/scale_ar_en</item>
+        <item name="android:lineSpacingExtra">3dp</item>
+        <item name="android:gravity">start|center_vertical</item>
+        <item name="fontFamily">@font/cairo_bold</item>
+        <item name="android:layout_gravity">start|center_vertical</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="AllEditTextStyle">
+        <item name="android:scaleX">@integer/scale_ar_en</item>
+    </style>
+
+
+    <style name="AllButtonsStyle" parent="Widget.AppCompat.Button.Borderless">
+        <item name="android:scaleX">@integer/scale_ar_en</item>
+    </style>
+
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <!--<item name="fontPath">@string/font</item>-->
+        <item name="android:fontFamily">@font/roboto</item>
+        <item name="fontFamily">@font/roboto</item>
+    </style>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light">
+        <!--<item name="fontPath">@string/font</item>-->
+        <item name="android:fontFamily">@font/roboto</item>
+        <item name="fontFamily">@font/roboto</item>
+    </style>
+
+    <style name="BDOR" parent="AllEditTextStyle">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>
+        <item name="android:height">35dp</item>
+    </style>
+
+    <style name="BDOR.Button" parent="BDOR">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginEnd">105dp</item>
+        <item name="android:layout_marginStart">105dp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:background">@drawable/button_login_round_shap</item>
+        <item name="android:layout_height">@dimen/button_height</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="rippleColor">@color/blue_text</item>
+
+
+        />
+
+    </style>
+
+    <style name="BDOR.EditText" parent="BDOR">
+
+        <item name="android:singleLine">true</item>
+        <item name="android:lines">1</item>
+        <item name="android:background">@drawable/edittext_background</item>
+        <!--<item name="android:fontFamily"></item>-->
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginEnd">50dp</item>
+        <item name="android:layout_marginStart">50dp</item>
+        <item name="android:padding">3dp</item>
+        <item name="android:textSize">12dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/color_gray</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">35dp</item>
+        <item name="android:inputType">textEmailAddress</item>
+
+
+    </style>
+
+
+<!--    <style name="AppLoginTheme" parent="Theme.AccountKit.Outline">-->
+<!--        &lt;!&ndash;<item name="fontPath">@string/font</item>&ndash;&gt;-->
+<!--        <item name="android:fontFamily">@font/roboto</item>-->
+<!--        <item name="fontFamily">@font/roboto</item>-->
+<!--        <item name="com_accountkit_primary_color">@color/colorPrimary</item>-->
+<!--        <item name="com_accountkit_primary_text_color">@android:color/black</item>-->
+<!--        &lt;!&ndash;<item name="com_accountkit_secondary_color">#eef6ff</item>&ndash;&gt;-->
+<!--        &lt;!&ndash;<item name="com_accountkit_secondary_text_color">#44566b</item>&ndash;&gt;-->
+<!--        &lt;!&ndash;<item name="com_accountkit_status_bar_color">#303f9f</item>&ndash;&gt;-->
+<!--        <item name="com_accountkit_background_color">#F2ECF1</item>-->
+<!--        <item name="com_accountkit_button_background_color">@color/colorPrimary</item>-->
+<!--        <item name="com_accountkit_button_text_color">@color/white</item>-->
+<!--        <item name="com_accountkit_input_background_color">@color/white</item>-->
+<!--        &lt;!&ndash;<item name="colorControlNormal">@color/black</item>&ndash;&gt;-->
+<!--        <item name="colorPrimaryDark">@color/grey.normal</item>-->
+<!--        &lt;!&ndash;<item name="toolbarStyle">@color/red500</item>&ndash;&gt;-->
+
+<!--    </style>-->
+
+    <style name="BadgeStyle">
+        <item name="android:textSize">10dp</item>
+        <item name="android:textColor">@color/color_white</item>
+        <item name="android:enabled">false</item>
+        <item name="android:clickable">false</item>
+        <item name="android:focusable">false</item>
+        <item name="android:layout_margin">0dp</item>
+        <item name="android:layout_width">22dp</item>
+        <item name="android:layout_height">22dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+
+    <style name="SwitchStyle">
+        <!--<item name="fontPath">@string/font</item>-->
+        <item name="android:fontFamily">@font/roboto</item>
+        <item name="fontFamily">@font/roboto</item>
+        <item name="android:layout_margin">5dp</item>
+        <!--<item name="android:scaleX">@integer/scale_ar_en</item>-->
+        <item name="android:gravity">start|center_vertical</item>
+        <item name="android:layout_gravity">start|center_vertical</item>
+        <!--<item name="android:textScaleX">@integer/scale_ar_en</item>-->
+        <item name="android:minHeight">50dp</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+
+    <style name="TintableImage">
+        <item name="android:background">@drawable/trans_to_trans_selector_fortint</item>
+        <item name="tintMode">src_atop</item>
+    </style>
+
+    <style name="TintableImage.DarkOnClick" parent="TintableImage">
+        <item name="tint">@drawable/nochange_to_dark_tint_selector</item>
+        <!--<item name="android:background">@drawable/trans_to_dark_selector_circle</item>-->
+    </style>
+
+    <style name="TintableImage.WhiteOnClick" parent="TintableImage">
+        <item name="tint">@drawable/nochange_to_dark_tint_selector</item>
+        <!--<item name="android:background">@drawable/trans_to_dark_selector_circle</item>-->
+    </style>
+
+
+    <style name="CheckBoxStyle" parent="Base.Widget.AppCompat.CompoundButton.CheckBox">
+        <item name="android:layout_gravity">start|center_vertical</item>
+        <item name="android:gravity">start|center_vertical</item>
+        <item name="android:button">@null</item>
+        <!--<item name="fontPath">@string/font</item>-->
+        <item name="android:fontFamily">@font/roboto</item>
+        <item name="fontFamily">@font/roboto</item>
+        <item name="android:drawableLeft">?android:attr/listChoiceIndicatorMultiple</item>
+    </style>
+
+    <style name="DialogAnimation" parent="AppTheme">
+        <item name="android:windowEnterAnimation">@anim/dialoge_in</item>
+        <item name="android:windowExitAnimation">@anim/dialoge_out</item>
+        <item name="md_background_color">@color/transparent</item>
+<!--        <item name="md_dark_theme">false</item>-->
+        <item name="android:windowMinWidthMajor">99%</item>
+        <item name="android:windowMinWidthMinor">99%</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+
+    <style name="DialogeButton" parent="Widget.AppCompat.Button.Borderless">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:layout_marginStart">5dp</item>
+        <item name="android:layout_marginEnd">5dp</item>
+    </style>
+
+    <style name="OutlineButtonStyle" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="strokeWidth">2dp</item>
+        <item name="fontFamily">@font/cairo_bold</item>
+        <item name="android:textSize">14sp</item>
+<!--        <item name="android:strokeColor">pri</item>-->
+    </style>
+
+    <style name="DialogeButton.Yes" parent="OutlineButtonStyle">
+        <item name="android:background">@drawable/button_login_round_shap</item>
+        <item name="android:textColor">@color/black_to_white_selector</item>
+
+    </style>
+
+    <style name="DialogeButton.No" parent="OutlineButtonStyle">
+        <item name="android:background">@drawable/button_green_rectangel_shape</item>
+
+
+        <item name="android:textColor">@color/white_to_black_selector</item>
+    </style>
+
+    <style name="AppStyles.RadioButton" parent="Base.Widget.AppCompat.CompoundButton.RadioButton">
+        <item name="android:button">@null</item>
+        <item name="android:drawableLeft">@android:drawable/btn_radio</item>
+        <item name="android:layout_gravity">start|center_vertical</item>
+        <item name="android:gravity">start|center_vertical</item>
+    </style>
+
+    <style name="RadioButtonStyle" parent="Base.Widget.AppCompat.CompoundButton.RadioButton" >
+        <!--<item name="android:fontFamily">@font/custom_font</item>-->
+        <item name="android:button">@null</item>
+        <item name="android:drawableRight">@android:drawable/btn_radio</item>
+        <item name="android:layout_gravity">start|center_vertical</item>
+        <item name="android:gravity">start|center_vertical</item>
+    </style>
+
+    <style name="NormalPopupMenu" parent="AppTheme">
+        <item name="android:textColor">@android:color/secondary_text_light</item>
+        <item name="android:itemBackground">@android:color/transparent</item>
+        <!--        <item name="android:background">@color/design_default_color_error</item>-->
+        <item name="android:textSize">12dp</item>
+        <item name="android:backgroundTint">#FFFFFF</item>
+        <item name="android:popupElevation">12dp</item>
+        <item name="android:dropDownVerticalOffset">0dp</item>
+        <item name="android:dropDownHorizontalOffset">0dp</item>
+        <item name="android:overlapAnchor">true</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">@font/roboto</item>
+        <item name="fontFamily">@font/roboto</item>
+        <item name="rippleColor">@color/blue_text</item>
+
+        <!--        <item name="android:listPreferredItemPaddingEnd">0dp</item>-->
+        <!--        <item name="android:listPreferredItemPaddingStart">0dp</item>-->
+        <!--        <item name="android:paddingTop">0dp</item>-->
+        <!--        <item name="android:paddingEnd">0dp</item>-->
+        <!--        <item name="android:paddingStart">0dp</item>-->
+        <!--        <item name="android:paddingBottom">0dp</item>-->
+        <!--        <item name="android:padding">@null</item>-->
+        <!--        <item name="android:layout_marginStart">1dp</item>-->
+        <!--        <item name="android:layout_marginEnd">1dp</item>-->
+        <!--        <item name="android:layout_marginTop">0dp</item>-->
+        <!--        <item name="android:layout_marginBottom">0dp</item>-->
+        <!--        <item name="android:layout_margin">@null</item>-->
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+
+    <style name="verticalDivider">
+        <item name="android:layout_width">1dp</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:background">@color/light_gray</item>
+    </style>
+
+    <style name="LoginCardStyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">24dp</item>
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:layout_marginEnd">24dp</item>
+        <item name="rippleColor">@color/blue_text</item>
+
+    </style>
+
+    <style name="TintableImage.DarkOnClick.ToolBarImages">
+        <item name="android:layout_width">50dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:clipChildren">false</item>
+        <item name="android:clipToPadding">false</item>
+        <item name="android:paddingStart">5dp</item>
+        <item name="android:paddingEnd">5dp</item>
+        <item name="android:paddingTop">20dp</item>
+        <item name="android:paddingBottom">20dp</item>
+        <item name="android:scaleX">@integer/image_scale</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:tint">@color/white</item>
+        <item name="tint">@color/white</item>
+        <item name="rippleColor">@color/blue_text</item>
+
+    </style>
+
+</resources>
+
+
+    <!--<style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">--><!--<item name="switchStyle">@style/Custom_SwitchCompat</item>--><!--<item name="colorPrimary">@color/colorPrimary</item>--><!--<item name="colorPrimaryDark">@color/colorPrimaryDark</item>--><!--<item name="colorAccent">@color/colorAccent</item>--><!--<item name="android:textAllCaps">false</item>--><!--<item name="android:textSize">@dimen/default.textSize</item>--><!--<item name="android:windowBackground">@color/default.windowBackground</item>--><!--<item name="colorControlActivated">@color/primary</item>--><!--<item name="borderColor">@color/primary</item>--><!--<item name="homeBoxColor">@color/primary</item>--><!--<item name="homeNewTitleBackground">@color/news.title.background</item>--><!--<item name="headBackground">#00732E </item>--><!--<item name="headTextColor">#FFF</item>--><!--<item name="dividerColor">@color/primary</item>--><!--<item name="iconColor">@color/black</item>--><!--<item name="toolbarIconColor">@color/white</item>--><!--<item name="android:textColor">@color/light.text.primary</item>--><!--<item name="android:textColorPrimary">@color/light.text.primary</item>--><!--<item name="android:textColorSecondary">@color/light.text.secondary</item>--><!--<item name="android:textColorTertiary">@color/light.text.hint</item>--><!--<item name="android:textColorHint">@color/light.text.hint</item>--><!--<item name="android:textColorPrimaryInverse">@color/dark.text.primary</item>--><!--<item name="android:textColorSecondaryInverse">@color/dark.text.secondary</item>--><!--<item name="android:textColorTertiaryInverse">@color/dark.text.hint</item>--><!--<item name="android:textColorHintInverse">@color/dark.text.hint</item>--><!--<item name="backColor">@color/white</item>--><!--<item name="iconActiveColor">@color/black</item>--><!--<item name="iconInactiveColor">@color/light.icon.inactive</item>--><!--<item name="buttonActiveColor">@color/accent</item>--><!--<item name="buttonInactiveColor">@color/light.icon.inactive</item>--><!--<item name="toolbarTheme">@style/ThemeOverlay.AppCompat.Dark.ActionBar</item>--><!--<item name="popupStyle">@style/PopupTheme.Light</item>--><!--<item name="fontPath">@string/font</item>--><!--<item name="textSizeTitle">@dimen/default.textSizeTitle</item>--><!--<item name="textSize">@dimen/default.textSize</item>--><!--<item name="android:textViewStyle">@style/SingleLineText</item>--><!--<item name="textSizeSec">@dimen/default.textSizeSec</item>--><!--<item name="buttonBackground">@drawable/button_selector</item>--><!--<item name="textSizeHtml">@dimen/default.textSizeHtml</item>--><!--&lt;!&ndash;<item name="mdtp_theme_dark">false</item>&ndash;&gt;--><!--</style>-->

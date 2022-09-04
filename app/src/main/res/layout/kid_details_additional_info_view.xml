@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardElevation="1dp"
+    app:cardUseCompatPadding="false">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="14dp"
+            android:visibility="visible" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:orientation="horizontal"
+            android:paddingStart="@dimen/kid_d_content_padding"
+            android:paddingEnd="@dimen/kid_d_content_padding"
+            android:weightSum="3">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start|center_vertical"
+                android:layout_weight="1"
+                android:gravity="start|center_vertical"
+                android:scaleX="@integer/scale_ar_en"
+                android:text="@string/driver_name"
+                android:textColor="@color/color_dark"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/labSchoolName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start|center_vertical"
+                android:layout_weight="2"
+                android:gravity="start|center_vertical"
+                android:scaleX="@integer/scale_ar_en"
+                android:text="fsdf"
+                android:textColor="@color/color_gray"
+                android:textSize="16dp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="@dimen/kid_d_content_padding"
+            android:background="@color/color_blue_light" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:paddingStart="@dimen/kid_d_content_padding"
+            android:paddingEnd="@dimen/kid_d_content_padding"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start|center_vertical"
+                android:layout_weight="1"
+                android:gravity="start|center_vertical"
+                android:scaleX="@integer/scale_ar_en"
+                android:text="@string/attendance_name"
+                android:textColor="@color/color_dark"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/labActiveRound"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start|center_vertical"
+                android:layout_weight="2"
+                android:gravity="start|center_vertical"
+                android:scaleX="@integer/scale_ar_en"
+                android:text="fsdf"
+                android:textColor="@color/color_gray"
+                android:textSize="16dp" />
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="@dimen/kid_d_content_padding"
+            android:background="@color/color_blue_light" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:paddingStart="@dimen/kid_d_content_padding"
+            android:paddingEnd="@dimen/kid_d_content_padding"
+            android:gravity="center_horizontal|center_vertical"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start|center_vertical"
+                android:layout_weight="1"
+                android:gravity="start|center_vertical"
+                android:scaleX="@integer/scale_ar_en"
+                android:text="@string/active_round_now"
+                android:textColor="@color/color_dark"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/labTimeOTArrive"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start|center_vertical"
+                android:layout_weight="2"
+                android:gravity="start|center_vertical"
+                android:scaleX="@integer/scale_ar_en"
+                android:text="fsdf"
+                android:textColor="@color/color_gray"
+                android:textSize="16dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

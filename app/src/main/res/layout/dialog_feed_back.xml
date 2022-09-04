@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:focusableInTouchMode="true"
+    android:focusable="true"
+    android:scaleX="@integer/scale_ar_en"
+    tools:background="@color/black">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:background="@drawable/round_dialog_message"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:layout_gravity="center" />
+
+        <TextView
+            android:id="@+id/labTitle"
+            style="@style/AllTextViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:minHeight="0dp"
+            android:text="@string/feedback"
+            android:textColor="@color/color_dark"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_gravity="center" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:scaleX="@integer/scale_ar_en"
+            android:weightSum="3">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/feed_a_img"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:background="@drawable/feed_icons_selector_circle"
+                android:padding="10dp"
+                android:scaleType="fitCenter"
+                app:tint="@color/green500"
+                app:srcCompat="@drawable/smile_a" />
+            <View
+                android:layout_width="10dp"
+                android:layout_height="match_parent"/>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/feed_b_img"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:background="@drawable/feed_icons_selector_circle"
+                android:padding="10dp"
+                android:scaleType="fitCenter"
+                app:tint="@color/black"
+                app:srcCompat="@drawable/smile_b" />
+            <View
+                android:layout_width="10dp"
+                android:layout_height="match_parent"/>
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/feed_c_img"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:background="@drawable/feed_icons_selector_circle"
+                android:padding="10dp"
+                android:scaleType="fitCenter"
+                app:tint="@color/red500"
+                app:srcCompat="@drawable/smile_c" />
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_gravity="center" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/feed_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:background="@drawable/edittext_background_noradius"
+            android:gravity="start"
+            android:hint="@string/enter_your_feedback"
+            android:minHeight="150dp"
+            android:padding="20dp"
+            android:scaleX="@integer/scale_ar_en"
+            android:textSize="14dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:singleLine="false" />
+
+        <androidx.legacy.widget.Space
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_gravity="center" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:orientation="horizontal"
+            android:scaleX="@integer/scale_ar_en"
+            android:layout_marginEnd="40dp"
+            android:layout_marginStart="40dp"
+            android:weightSum="2">
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnCancel"
+                style="@style/OutlineButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:textColor="@color/color_red"
+                app:cornerRadius="30dp"
+                android:includeFontPadding="false"
+                android:padding="0dp"
+                android:text="@string/cancel"
+                app:strokeColor="@color/color_red" />
+
+
+            <!--            <Button-->
+            <!--                android:id="@+id/btnSubmint"-->
+            <!--                style="@style/AllButtonsStyle"-->
+            <!--                android:layout_width="0dp"-->
+            <!--                android:layout_height="40dp"-->
+            <!--                android:layout_marginStart="15dp"-->
+            <!--                android:layout_marginEnd="15dp"-->
+            <!--                android:layout_weight="1"-->
+            <!--                android:background="@drawable/button_login_round_shap"-->
+            <!--                android:scaleX="1"-->
+            <!--                android:text="@string/ok"-->
+            <!--                android:textAllCaps="false"-->
+            <!--                android:textColor="@android:color/black" />-->
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnSubmint"
+                style="@style/OutlineButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:textColor="@color/green500"
+                app:cornerRadius="30dp"
+                android:includeFontPadding="false"
+                android:padding="0dp"
+                android:text="@string/ok"
+                app:strokeColor="@color/green500" />
+
+
+
+        </LinearLayout>
+
+        <androidx.legacy.widget.Space
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:layout_gravity="center" />
+    </LinearLayout>
+
+
+</LinearLayout>

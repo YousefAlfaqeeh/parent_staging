@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    app:cardElevation="1dp"
+    app:cardUseCompatPadding="false"
+    tools:ignore="MissingConstraints">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@drawable/trans_to_dark_selector"
+        android:clipChildren="false"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/kid_d_content_padding">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/feature_icon"
+            android:layout_width="@dimen/kid_details_icons_h"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:maxWidth="@dimen/kid_details_icons_h"
+            android:padding="0dp"
+            android:scaleType="fitCenter"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/school_outline"
+            />
+
+
+        <TextView
+            android:id="@+id/feature_text"
+            style="@style/AllTextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start|center_vertical"
+            android:layout_marginStart="@dimen/kid_d_text_left_padding"
+            android:gravity="start|center_vertical"
+            android:includeFontPadding="false"
+            android:text="@string/call_with"
+            android:textColor="@color/material_blue_grey_9000"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/feature_icon"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="@dimen/kid_d_text_under_line_left_padding"
+            android:background="@color/color_blue_light"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

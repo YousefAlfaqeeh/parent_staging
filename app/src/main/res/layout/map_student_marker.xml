@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="180dp"
+    android:gravity="right"
+    android:orientation="horizontal">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:scaleX="@integer/scale_ar_en"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/labRoutNumberStudent"
+            style="@style/AllTextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="0.5"
+            android:background="@drawable/label_student_round_shape"
+            android:gravity="center"
+            android:padding="6dp"
+            android:text="-----"
+            android:textColor="@android:color/white"
+
+            android:textSize="13dp"
+            android:textStyle="bold"
+
+            />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/icon_user"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+
+
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:src="@drawable/img_marker" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imgMarkerStudent"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:padding="5dp"
+                android:scaleX="@integer/scale_ar_en"
+                android:layout_marginTop="5dp"
+                app:civ_border_color="@android:color/white"
+                app:civ_border_width="1dp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <!-- <LinearLayout
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentTop="true"
+         android:layout_alignParentStart="true"
+         android:layout_alignParentStart="true">
+            <TextView
+         android:id="@+id/labNameStudent"
+         android:layout_width="120dp"
+         android:layout_height="25dp"
+         android:gravity="center"
+         android:background="@drawable/label_student_round_shape"
+         android:textColor="@android:color/white"
+         android:textStyle="bold"
+         android:textSize="12dp"
+         android:text="Murad Adnan"
+         android:layout_weight="1"
+                android:layout_marginStart="70dp"
+          android:layout_marginTop="75dp"
+                />
+     </LinearLayout>-->
+</RelativeLayout>

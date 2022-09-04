@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:scaleX="@integer/scale_ar_en"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/color_white"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="@string/attintion"
+        style="@style/AllTextViewStyle"
+        android:textStyle="bold"
+        android:textColor="@color/color_gray"
+        android:textSize="17dp"/>
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textStyle="bold"
+        style="@style/AllTextViewStyle"
+        android:textColor="@color/color_gray"
+        android:text="@string/school_bus_id_near_to_pick_up"/>
+     <Button
+         android:layout_marginTop="20dp"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_gravity="center_horizontal"
+         style="@style/AllButtonsStyle"
+
+         android:layout_marginStart="130dp"
+         android:layout_marginEnd="130dp"
+         android:background="@drawable/button_attintion_dialog_round"
+         android:text="@string/save"
+         android:textStyle="bold"
+         android:textColor="@android:color/white"/>
+
+</LinearLayout>

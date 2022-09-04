@@ -1,0 +1,78 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!--    parent="@style/ThemeOverlay.MaterialComponents.MaterialAlertDialog"-->
+    <style name="AppTheme.AlertDialogTheme" parent="@style/ThemeOverlay.MaterialComponents.MaterialAlertDialog">
+        <item name="buttonBarPositiveButtonStyle">@style/Alert.Button.Positive</item>
+        <item name="buttonBarNegativeButtonStyle">@style/Alert.Button.Negative</item>
+        <item name="buttonBarNeutralButtonStyle">@style/Alert.Button.Neutral</item>
+        <item name="materialAlertDialogTitleTextStyle">@style/Alert.Title.Text</item>
+        <item name="materialAlertDialogBodyTextStyle">@style/Alert.Body.Text</item>
+        <item name="android:backgroundDimAmount">0.7</item>
+        <item name="dialogCornerRadius">@null</item>
+        <item name="android:dialogCornerRadius" tools:ignore="NewApi">@null</item>
+
+    </style>
+
+    <style name="Alert.Body.Text" parent="@style/MaterialAlertDialog.MaterialComponents.Body.Text">
+        <item name="android:textSize">16dp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="Alert.Title.Text" parent="@style/MaterialAlertDialog.MaterialComponents.Title.Text">
+        <item name="android:textSize">18dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Alert.Button.Positive" parent="@style/Widget.MaterialComponents.Button.TextButton.Dialog">
+        <!--        <item name="backgroundTint">@color/transparent</item>-->
+        <item name="rippleColor">@color/colorPrimary</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <!--        <item name="android:textSize">14sp</item>-->
+        <!--        <item name="android:textAllCaps">false</item>-->
+    </style>
+
+    <style name="Alert.Button.Neutral" parent="@style/Widget.MaterialComponents.Button.TextButton.Dialog">
+        <!--        <item name="backgroundTint">@color/transparent</item>-->
+        <item name="rippleColor">@color/colorPrimary</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <!--        <item name="android:textSize">14sp</item>-->
+    </style>
+
+    <style name="Alert.Button.Negative" parent="@style/Widget.MaterialComponents.Button.TextButton.Dialog">
+        <!--        <item name="backgroundTint">@color/transparent</item>-->
+        <item name="rippleColor">@color/colorPrimary</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <!--        <item name="android:textSize">14sp</item>-->
+    </style>
+
+
+    <!--    BottomSheetDialog-->
+
+
+    <!--    <style name="AppTheme.AlertDialogTheme" parent="@style/ThemeOverlay.MaterialComponents.Light.BottomSheetDialog">-->
+    <!--        <item name="android:windowBackground">@android:color/transparent</item>-->
+    <!--        <item name="android:statusBarColor">@android:color/transparent</item>-->
+    <!--        <item name="android:windowAnimationStyle">@style/Animation.MaterialComponents.BottomSheetDialog</item>-->
+    <!--&lt;!&ndash;        <item name="bottomSheetStyle">@style/Widget.MaterialComponents.BottomSheet</item>&ndash;&gt;-->
+    <!--        <item name="bottomSheetStyle">@style/BottomSheet_Rounded</item>-->
+    <!--        <item name="android:windowFullscreen">false</item>-->
+    <!--        <item name="android:colorBackgroundCacheHint">@null</item>-->
+    <!--        <item name="materialButtonStyle">@style/Widget.MaterialComponents.Button</item>-->
+    <!--    </style>-->
+
+    <!--    <style name="ShapeAppearanceBottomSheetDialog_Rounded">-->
+    <!--        <item name="cornerFamily">rounded</item>-->
+    <!--        <item name="cornerSizeTopRight">16dp</item>-->
+    <!--        <item name="cornerSizeTopLeft">16dp</item>-->
+    <!--        <item name="cornerSizeBottomRight">0dp</item>-->
+    <!--        <item name="cornerSizeBottomLeft">0dp</item>-->
+    <!--&lt;!&ndash;        <item name="android:paddingTop">@dimen/bottomsheet_padding_top</item>&ndash;&gt;-->
+    <!--        <item name="behavior_halfExpandedRatio">0.5</item>-->
+    <!--        <item name="behavior_fitToContents">true</item>-->
+    <!--        <item name="behavior_hideable">true</item>-->
+    <!--&lt;!&ndash;        <item name="shapeAppearance">@null</item>&ndash;&gt;-->
+    <!--&lt;!&ndash;        <item name="behavior_expandedOffset">150</item>&ndash;&gt;-->
+    <!--    </style>-->
+    <!--    <style name="BottomSheet_Rounded" parent="Widget.MaterialComponents.BottomSheet">-->
+    <!--        <item name="shapeAppearanceOverlay">@style/ShapeAppearanceBottomSheetDialog_Rounded</item>-->
+    <!--    </style>-->
+</resources>
