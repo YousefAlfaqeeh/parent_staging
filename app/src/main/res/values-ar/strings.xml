@@ -232,5 +232,7 @@
 
     <string name="privacy_policy">بتسجيل الدخول ، أوافق على <a href="https://www.google.com/"> سياسة الخصوصية </a> و <a href="https://www.google.com/"> الشروط والأحكام </a></string>
     <string name="current_position">Current Position</string>
+    <string name="beacon_successfully">تم إرسال بنجاح</string>
+    <string name="error_user_name">خطأ في اسم المستخدم او كلمة المرور</string>
 
 </resources>

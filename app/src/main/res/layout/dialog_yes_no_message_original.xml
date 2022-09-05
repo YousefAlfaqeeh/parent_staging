@@ -58,8 +58,7 @@
             android:textColor="@color/blue_background"
             android:textSize="17dp"
             android:textStyle="bold"
-            android:visibility="gone"
-            tools:visibility="visible" />
+    />
 
         <androidx.legacy.widget.Space
             android:layout_width="match_parent"

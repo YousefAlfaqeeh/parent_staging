@@ -248,5 +248,6 @@
     <string name="privacy_policy">By signing in, I accept Trackware’s  <a href="https://www.google.com/">Privacy  Policy </a>  and <a href="https://www.google.com/">Terms of Conditions</a></string>
     <string name="all_rights_reserved_trackware">All rights reserved @trackware</string>
     <string name="current_position">Current Position</string>
+    <string name="error_user_name">Wrong Username or Password</string>
 
 </resources>

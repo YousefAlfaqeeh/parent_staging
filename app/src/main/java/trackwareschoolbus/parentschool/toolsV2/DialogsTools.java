@@ -188,6 +188,17 @@ public final class DialogsTools {
 
         public MessageYesNoDialog(Context context) {
             this.context = context;
+            messageYesNoDialog = new MaterialDialog.Builder(this.context).
+                    canceledOnTouchOutside(false).
+                    cancelable(false).theme(Theme.DARK).
+                    customView(R.layout.dialog_yes_no_message_original, true).
+                    autoDismiss(true).build();
+
+            btnSubmint = messageYesNoDialog.getView().findViewById(R.id.btnSubmint);
+            btnCancel = messageYesNoDialog.getView().findViewById(R.id.btnCancel);
+            dialoge_message = messageYesNoDialog.getView().findViewById(R.id.dialoge_message);
+            dialoge_title = messageYesNoDialog.getView().findViewById(R.id.dialoge_title);
+            dialoge_image = messageYesNoDialog.getView().findViewById(R.id.dialoge_image);
         }
 
         public MessageYesNoDialog show(Context context) {
@@ -284,9 +295,9 @@ public final class DialogsTools {
 
         public MessageYesNoDialog setDialogeTitle(String title) {
             try {
-                dialoge_title.setText(title);
 
                 dialoge_title.setVisibility(View.VISIBLE);
+                dialoge_title.setText(title);
 
             } catch (Exception e) {
 
@@ -297,6 +308,10 @@ public final class DialogsTools {
 
         public MessageYesNoDialog setString_title(String string_title) {
             this.string_title = string_title;
+            if (string_title.equals(""))
+                return this;
+            dialoge_message.setVisibility(View.VISIBLE);
+            dialoge_message.setText(string_title);
             return this;
         }
 
@@ -421,7 +436,8 @@ public final class DialogsTools {
 
     public static MessageYesNoDialog showGeneralErrorDialog(final Context activity, @Nullable String message) {
         try {
-            String titleMessage = activity.getString(R.string.error_api);
+//            String titleMessage = activity.getString(R.string.error_api);
+            String titleMessage = activity.getString(R.string.error_user_name);
 
             if (message != null) {
                 titleMessage = message;
@@ -433,6 +449,7 @@ public final class DialogsTools {
                     .setDialogeTitle(titleMessage)
                     .setImageWithColor(R.drawable.img_error, activity.getColor(R.color.black))
                     .setYesButtonText(R.string.ok).show(activity);
+
         } catch (Exception e) {
             return null;
         }

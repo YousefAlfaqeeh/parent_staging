@@ -343,10 +343,7 @@ class LoginFragment : BaseFragment() {
             logInReq.mobile_token =FirebaseInstanceId.getInstance().token.toString()
 
         }
-        val refreshedToken = FirebaseInstanceId.getInstance().token
-        Log.d("aaaaaaaaaaaaaaaaaaaaaaaaaaaa111", FirebaseInstanceId.getInstance().token.toString())
-        Log.d("aaaaaaaaaaaaaaaaaaaaaaaaaaaa",firebase_token)
-
+//        val refreshedToken = FirebaseInstanceId.getInstance().token
         ConnectionFactory.getInstance().logIn(logInReq)
             .observe(viewLifecycleOwner, { response ->
                 try {
