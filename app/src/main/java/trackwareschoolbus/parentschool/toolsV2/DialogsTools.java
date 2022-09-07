@@ -215,7 +215,7 @@ public final class DialogsTools {
             } catch (Exception e) {
 
             }
-
+//          initial value in constructor
 
             messageYesNoDialog = new MaterialDialog.Builder(this.context).
                     canceledOnTouchOutside(false).

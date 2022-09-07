@@ -249,5 +249,5 @@
     <string name="all_rights_reserved_trackware">All rights reserved @trackware</string>
     <string name="current_position">Current Position</string>
     <string name="error_user_name">Wrong Username or Password</string>
-
+    <string name="change_language">Change Language to</string>
 </resources>

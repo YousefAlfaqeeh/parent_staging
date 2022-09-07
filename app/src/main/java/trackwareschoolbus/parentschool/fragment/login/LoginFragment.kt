@@ -33,7 +33,7 @@ import kotlinx.android.synthetic.main.fragment_login_v2.*
 class LoginFragment : BaseFragment() {
     var btnLogIn: Button? = null
     var mActivity: Activity? =null
-    var btnSelectLanguge: Button? = null
+    var btnSelectLanguge: TextView? = null
 //    var btnSelectLanguge: View? = null
     var school_list_layout: View? = null
     var txtPin: EditText? = null
@@ -73,6 +73,7 @@ class LoginFragment : BaseFragment() {
 
         btnLogIn = view.findViewById(R.id.btnLogIn)
         btnLogIn?.setOnClickListener {callLogIn() }
+//        Start code  change language
         if (Locale.getDefault().getDisplayLanguage().equals("English")) {
             btnSelectLanguge?.setText(mActivity!!.getString(R.string.ar));
 
@@ -105,6 +106,7 @@ class LoginFragment : BaseFragment() {
 
 
         }}
+        //        End code  change language
 
 //        txtPin.setOnFocusChangeListener(new View.OnFocusChangeListener() {
 //            @Override
@@ -273,6 +275,7 @@ class LoginFragment : BaseFragment() {
     }
 
     fun showSchoolsList() {
+//        get schools list  according to language
         if(Locale.getDefault().getDisplayLanguage().equals("English"))
         {
             school_list?.let {school_list->
@@ -314,7 +317,7 @@ class LoginFragment : BaseFragment() {
     }
 
     fun callLogIn() {
-        /////////
+        ///////// method login
 
         if (txtPin!!.text.toString().isEmpty() ||
             txtpass!!.text.toString().isEmpty() || selectedSchool == null
@@ -338,6 +341,7 @@ class LoginFragment : BaseFragment() {
         logInReq.platform = platform
         logInReq.schoolName = school_name
         logInReq.mobile_token = firebase_token
+//        if mobile token is empte create new mobile token
         if (logInReq.mobile_token.equals(""))
         {
             logInReq.mobile_token =FirebaseInstanceId.getInstance().token.toString()
@@ -363,6 +367,7 @@ class LoginFragment : BaseFragment() {
     }
 
     fun callKidsListAPI() {
+//        method get Kids list
         ConnectionFactory.getInstance().kidsListForAllKids
             .observe(viewLifecycleOwner, { response ->
                 hideLoading()
