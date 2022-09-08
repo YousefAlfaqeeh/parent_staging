@@ -13,9 +13,11 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
+import com.google.android.gms.tasks.OnCompleteListener
 import com.google.android.gms.tasks.Task
 import com.google.firebase.iid.FirebaseInstanceId
 import com.google.firebase.iid.InstanceIdResult
+import com.google.firebase.messaging.FirebaseMessaging
 import me.linshen.retrofit2.adapter.ApiSuccessResponse
 import trackwareschoolbus.parentschool.API_V2.ConnectionFactory
 import trackwareschoolbus.parentschool.MainFragmentActivity
@@ -29,6 +31,7 @@ import trackwareschoolbus.parentschool.utilityParent.UtilityParent
 import java.util.*
 import java.util.function.Consumer
 import kotlinx.android.synthetic.main.fragment_login_v2.*
+import trackwareschoolbus.parentschool.SplashActivity
 
 class LoginFragment : BaseFragment() {
     var btnLogIn: Button? = null
@@ -87,20 +90,16 @@ class LoginFragment : BaseFragment() {
                 UtilityParent.setStringShared(UtilityParent.LANGUAGE, "en")
                 UtilityParent.setStringShared(UtilityParent.LANGUAGE_SELECTED, "en")
                 UtilityParent.setLocale("en", this.requireActivity().getApplication())
-                val intent = Intent(requireActivity(), MainFragmentActivity::class.java)
+                val intent = Intent(requireActivity(), SplashActivity::class.java)
                 intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TOP
                 startActivity(intent)
 
         } else {
 
-
-
-
-
                 UtilityParent.setStringShared(UtilityParent.LANGUAGE, "ar")
                 UtilityParent.setStringShared(UtilityParent.LANGUAGE_SELECTED, "ar")
                 UtilityParent.setLocale("ar", this.requireActivity().getApplication())
-                val intent = Intent(requireActivity(), MainFragmentActivity::class.java)
+                val intent = Intent(requireActivity(), SplashActivity::class.java)
                 intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TOP
                 startActivity(intent)
 
@@ -342,6 +341,7 @@ class LoginFragment : BaseFragment() {
         logInReq.schoolName = school_name
         logInReq.mobile_token = firebase_token
 //        if mobile token is empte create new mobile token
+
         if (logInReq.mobile_token.equals(""))
         {
             logInReq.mobile_token =FirebaseInstanceId.getInstance().token.toString()
@@ -374,6 +374,7 @@ class LoginFragment : BaseFragment() {
                 try {
                     if ((response as ApiSuccessResponse<GetKidsResp>).body !=null && (response as ApiSuccessResponse<GetKidsResp>).body.students!=null && (response as ApiSuccessResponse<GetKidsResp>).body.students.size>0){
                         val students = (response as ApiSuccessResponse<GetKidsResp>).body
+                        Log.d("aaaaaaaaaaaaaa", students.toString());
                         schoolDataHolder.kidsResp = students
                         students.students.forEach(Consumer { student: Student ->
                             student.schoolsListItem = selectedSchool

@@ -7,10 +7,10 @@ package trackwareschoolbus.parentschool.API_new.APIs;
 public interface Constants {
 
     String HTTPS = "https://";
-    String DEV_PROD = "prod";
-//    String DEV_PROD = "dev";
-//    String  SCHOOLS_LIST = "https://trackware-schools.s3.eu-central-1.amazonaws.com/qc1.json"; // DEV
-    String  SCHOOLS_LIST = "https://trackware-schools.s3.eu-central-1.amazonaws.com/infos.json"; // PROD
+//    String DEV_PROD = "prod";
+    String DEV_PROD = "dev";
+    String  SCHOOLS_LIST = "https://trackware-schools.s3.eu-central-1.amazonaws.com/qc1.json"; // DEV
+//    String  SCHOOLS_LIST = "https://trackware-schools.s3.eu-central-1.amazonaws.com/infos.json"; // PROD
 
 //    String  SCHOOLS_LIST = SCHOOLS_LIST_DEV;
 

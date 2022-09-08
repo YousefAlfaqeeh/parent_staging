@@ -244,10 +244,11 @@
     <string name="select_school_hint">Select School</string>
     <string name="please_n_add_children">Please \n add children</string>
     <string name="forget_password_login"><u>Forget Password?</u></string>
-
-    <string name="privacy_policy">By signing in, I accept Trackware’s  <a href="https://www.google.com/">Privacy  Policy </a>  and <a href="https://www.google.com/">Terms of Conditions</a></string>
+    <string name="a_e">ع</string>
+    <string name="privacy_policy">By signing in, I accept Trackware’s  <a href="https://trackware.com/privacy-policy/">Privacy  Policy </a>  and <a href="https://trackware.com/terms-conditions/">Terms of Conditions</a></string>
     <string name="all_rights_reserved_trackware">All rights reserved @trackware</string>
     <string name="current_position">Current Position</string>
     <string name="error_user_name">Wrong Username or Password</string>
     <string name="change_language">Change Language to</string>
+
 </resources>
