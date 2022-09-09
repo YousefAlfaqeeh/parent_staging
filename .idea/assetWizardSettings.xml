@@ -24,7 +24,31 @@
                                             <option name="values">
                                               <map>
                                                 <entry key="color" value="000000" />
-                                                <entry key="imagePath" value="/private/var/folders/s3/6_05pvp11b79v1n2nd2js16w0000gn/T/ic_android_black_24dp.xml" />
+                                                <entry key="imagePath" value="/tmp/baseline_language_24.xml" />
+                                                <entry key="opacityPercent" value="80" />
+                                              </map>
+                                            </option>
+                                          </PersistentState>
+                                        </value>
+                                      </entry>
+                                      <entry key="clipartAsset">
+                                        <value>
+                                          <PersistentState>
+                                            <option name="values">
+                                              <map>
+                                                <entry key="url" value="file:$PROJECT_DIR$/../Android/Sdk/icons/material/materialicons/language/baseline_language_24.xml" />
+                                              </map>
+                                            </option>
+                                          </PersistentState>
+                                        </value>
+                                      </entry>
+                                      <entry key="image">
+                                        <value>
+                                          <PersistentState>
+                                            <option name="values">
+                                              <map>
+                                                <entry key="color" value="000000" />
+                                                <entry key="opacityPercent" value="80" />
                                               </map>
                                             </option>
                                           </PersistentState>
@@ -56,8 +80,9 @@
                                   </option>
                                   <option name="values">
                                     <map>
-                                      <entry key="theme" value="HOLO_DARK" />
-                                      <entry key="themeColor" value="ffffff" />
+                                      <entry key="outputName" value="lang_bl" />
+                                      <entry key="theme" value="CUSTOM" />
+                                      <entry key="themeColor" value="1681c6" />
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -73,7 +98,7 @@
                                           <PersistentState>
                                             <option name="values">
                                               <map>
-                                                <entry key="imagePath" value="$USER_HOME$/Downloads/android/drawable-xxxhdpi-icon.png" />
+                                                <entry key="imagePath" value="$PROJECT_DIR$/../Downloads" />
                                                 <entry key="scalingPercent" value="0" />
                                               </map>
                                             </option>
@@ -86,7 +111,7 @@
                                             <option name="values">
                                               <map>
                                                 <entry key="color" value="000000" />
-                                                <entry key="imagePath" value="/private/var/folders/s3/6_05pvp11b79v1n2nd2js16w0000gn/T/ic_android_black_24dp.xml" />
+                                                <entry key="imagePath" value="/tmp/ic_android_black_24dp.xml" />
                                               </map>
                                             </option>
                                           </PersistentState>
@@ -98,7 +123,7 @@
                                             <option name="values">
                                               <map>
                                                 <entry key="color" value="000000" />
-                                                <entry key="imagePath" value="$USER_HOME$/Downloads/android/drawable-xxxhdpi-icon.png" />
+                                                <entry key="imagePath" value="$PROJECT_DIR$/../Downloads" />
                                                 <entry key="scalingPercent" value="45" />
                                               </map>
                                             </option>
@@ -132,8 +157,6 @@
                                   <option name="values">
                                     <map>
                                       <entry key="backgroundAssetType" value="COLOR" />
-                                      <entry key="backgroundColor" value="ffffff" />
-                                      <entry key="legacyIconShape" value="CIRCLE" />
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -150,7 +173,7 @@
                                             <option name="values">
                                               <map>
                                                 <entry key="color" value="000000" />
-                                                <entry key="imagePath" value="/private/var/folders/s3/6_05pvp11b79v1n2nd2js16w0000gn/T/ic_android_black_24dp.xml" />
+                                                <entry key="imagePath" value="/tmp/ic_android_black_24dp.xml" />
                                               </map>
                                             </option>
                                           </PersistentState>
@@ -213,7 +236,7 @@
                                             <option name="values">
                                               <map>
                                                 <entry key="color" value="000000" />
-                                                <entry key="imagePath" value="/private/var/folders/s3/6_05pvp11b79v1n2nd2js16w0000gn/T/ic_android_black_24dp.xml" />
+                                                <entry key="imagePath" value="/tmp/ic_android_black_24dp.xml" />
                                               </map>
                                             </option>
                                           </PersistentState>
@@ -277,7 +300,7 @@
                                           <PersistentState>
                                             <option name="values">
                                               <map>
-                                                <entry key="imagePath" value="/private/var/folders/s3/6_05pvp11b79v1n2nd2js16w0000gn/T/ic_android_black_24dp.xml" />
+                                                <entry key="imagePath" value="/tmp/ic_android_black_24dp.xml" />
                                               </map>
                                             </option>
                                           </PersistentState>
@@ -323,6 +346,11 @@
                             </entry>
                           </map>
                         </option>
+                        <option name="values">
+                          <map>
+                            <entry key="outputIconType" value="ACTIONBAR" />
+                          </map>
+                        </option>
                       </PersistentState>
                     </value>
                   </entry>
@@ -358,7 +386,7 @@
                           <map>
                             <entry key="assetSourceType" value="FILE" />
                             <entry key="outputName" value="new_ic_notifcation" />
-                            <entry key="sourceFile" value="$USER_HOME$/Downloads/bell-outline.svg" />
+                            <entry key="sourceFile" value="$PROJECT_DIR$/../Downloads/bell-outline.svg" />
                           </map>
                         </option>
                       </PersistentState>

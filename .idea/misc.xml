@@ -3,16 +3,23 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/drawable-anydpi/lang.xml" value="0.156" />
+        <entry key="app/src/main/res/drawable-ar/select_lang.xml" value="0.156" />
+        <entry key="app/src/main/res/drawable/absent_outline_.xml" value="0.156" />
         <entry key="app/src/main/res/drawable/button_active.xml" value="0.1140625" />
         <entry key="app/src/main/res/drawable/call_phones_selector.xml" value="0.13541666666666666" />
         <entry key="app/src/main/res/drawable/ddl_background.xml" value="0.15572916666666667" />
         <entry key="app/src/main/res/drawable/edittext_background.xml" value="0.15572916666666667" />
         <entry key="app/src/main/res/drawable/feed_icons_selector_circle.xml" value="0.14322916666666666" />
         <entry key="app/src/main/res/drawable/ic_baseline_arrow_drop_down.xml" value="0.15092592592592594" />
+        <entry key="app/src/main/res/drawable/ic_user_name.xml" value="0.156" />
         <entry key="app/src/main/res/drawable/kids_list_circle.xml" value="0.225" />
         <entry key="app/src/main/res/drawable/kids_name_background.xml" value="0.14322916666666666" />
+        <entry key="app/src/main/res/drawable/lang.xml" value="0.156" />
+        <entry key="app/src/main/res/drawable/login_gradint_background.xml" value="0.156" />
         <entry key="app/src/main/res/drawable/new_ic_notifcation.xml" value="0.13541666666666666" />
         <entry key="app/src/main/res/drawable/school_outline.xml" value="0.15092592592592594" />
+        <entry key="app/src/main/res/drawable/select_lang.xml" value="0.156" />
         <entry key="app/src/main/res/drawable/yello_circle_selector.xml" value="0.13541666666666666" />
         <entry key="app/src/main/res/drawable/yello_circle_selector_v2.xml" value="0.13541666666666666" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.12135416666666667" />
@@ -44,7 +51,7 @@
         <entry key="app/src/main/res/layout/features_view.xml" value="0.25" />
         <entry key="app/src/main/res/layout/fragment_change_location.xml" value="0.25" />
         <entry key="app/src/main/res/layout/fragment_chat.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/fragment_login_v2.xml" value="0.18645833333333334" />
+        <entry key="app/src/main/res/layout/fragment_login_v2.xml" value="0.25" />
         <entry key="app/src/main/res/layout/fragment_main.xml" value="0.25" />
         <entry key="app/src/main/res/layout/fragment_main_bar.xml" value="0.2" />
         <entry key="app/src/main/res/layout/fragment_map.xml" value="0.12407407407407407" />
@@ -52,6 +59,7 @@
         <entry key="app/src/main/res/layout/fragment_register.xml" value="0.25" />
         <entry key="app/src/main/res/layout/fragment_select_school_user_pass.xml" value="0.25" />
         <entry key="app/src/main/res/layout/fragment_setting.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/fragment_splach.xml" value="0.33611111111111114" />
         <entry key="app/src/main/res/layout/fragment_teacher.xml" value="0.13623725671918444" />
         <entry key="app/src/main/res/layout/fragmnent_kids.xml" value="0.175" />
         <entry key="app/src/main/res/layout/fragmnent_kids_v2.xml" value="0.25" />
