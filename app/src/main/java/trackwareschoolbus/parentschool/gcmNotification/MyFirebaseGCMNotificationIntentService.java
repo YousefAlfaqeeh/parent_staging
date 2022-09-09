@@ -160,7 +160,8 @@ public class MyFirebaseGCMNotificationIntentService extends FirebaseMessagingSer
         notificationBuilder = new NotificationCompat.Builder(this, CHANNEL_ID);
         notificationBuilder.setSound(parse);
         notificationBuilder.setDefaults(Notification.DEFAULT_VIBRATE);
-        PendingIntent pendingIntent = PendingIntent.getActivity(this, not_nu, intent, PendingIntent.FLAG_UPDATE_CURRENT);
+//        PendingIntent pendingIntent = PendingIntent.getActivity(this, not_nu, intent, PendingIntent.FLAG_UPDATE_CURRENT);
+        PendingIntent pendingIntent=PendingIntent.getActivity(this, 0, intent, PendingIntent.FLAG_MUTABLE);
         notificationBuilder.setSmallIcon(R.drawable.ic_android_black_24dp);
         notificationBuilder.setAutoCancel(true);
         notificationBuilder.setPriority(Notification.PRIORITY_MAX);

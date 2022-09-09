@@ -6,7 +6,6 @@
     android:layout_height="match_parent"
     android:background="@drawable/login_gradint_background">
 
-
     <include
         layout="@layout/app_toolbar_header"
         android:id="@id/toolBarMainView"
@@ -30,7 +29,6 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="24dp"
         android:layout_marginBottom="50dp"
-
         android:backgroundTint="@color/grey.dark"
         android:drawableEnd="@drawable/lang_bl"
         android:gravity="center"
@@ -39,9 +37,7 @@
         android:insetRight="0dp"
         android:insetBottom="0dp"
         android:text="@string/ar_en"
-
         android:textColor="#1681C6"
-
         android:textStyle="bold"
         app:cornerRadius="20dp"
         app:layout_constraintBottom_toTopOf="@+id/cardSchool"
